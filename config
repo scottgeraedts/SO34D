@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = ssh://git@github.com/scottgeraedts/SO34D.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
