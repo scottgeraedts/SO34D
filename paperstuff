@@ -1,0 +1,24 @@
+From these unit vectors, we can define the hedgehog current $Q_\mu$ using the prescription in Ref.~\onlinecite{LesikAshvin}, modified to four dimensions. We summarize this prescription here. One first defines variables $\alpha_mu(R)$, which exist on links connecting the spins $\vec n(R)$ and $\vec n(r+\mu)$:
+\begin{equation}
+e^{-i\alpha_\mu(R)}=\frac{1+\vec{n}(R)\cdot\vec{n}(r+\mu)+\vec{n}(R)\cdot\vec{N}_0+\vec{n}(r+\mu)\cdot\vec{N}_0+i\vec{N}_0 [\vec{n}(R)\times\vec{n}(r+\mu)]}{\sqrt{(1+\vec{n}(R)\cdot\vec{n}(r+\mu))(1+\vec{n}(R)\cdot\vec{N}_0)(1+\vec{n}(r+\mu)\cdot\vec{N}_0}}
+\label{alpha}
+\end{equation}.
+Here $\vec{N}_0$ is a reference vector which we choose arbitrarily. Though $\alpha_\mu$ is dependent on the choice of this reference vector, we will see that in the end the monopole current is independent of it. We then define placket variables $F_{\mu\nu}$ as follows:
+\begin{equation}
+F_{\mu\nu}(R)=\alpha_\mu(R+\nu)-\alpha_\mu(R)-\alpha_\nu(R+\mu)+\alpha_\nu(R).
+\end{equation}
+One can show that changing the reference vectors $\vec{N}_0$ will change each $\alpha$ variable by a phase, and these phases will cancel in the definition of $F_{\mu\nu}$ so that it is independent of the reference vector. Finally, we can define the monopole current:
+\begin{equation}
+Q_\mu(r)=\frac{1}{2}\epsilon_{\mu\nu\rho\lambda}\partial_nu F_{\rho\lambda}(R).
+\end{equation}
+If we consider only three dimensions of our four-dimensional lattice, the $F_{\mu\nu}$ involved in the definition of $Q_\mu$ make up a cube on the lattice indexed by $R$. We have defined the lattices so that there is a vertex of the lattice labelled by $r$ at the center of this cube, and this is where the $Q_\mu$ variables are defined. When all four dimensions are considered, the vertex becomes a link in the $\mu$ direction. 
+
+To determine the phase diagram of the bulk of this model, it is convenient to define new variables
+\begin{equation}
+\tilde J_\mu(r)=J_\mu(r)-Q_\mu(r).
+\end{equation}
+Expressed in these variables, Eq.~\ref{action} becomes an action in terms an $SO(3)$ field, dependent only on the parameter $\beta$ and an action in terms of a $U(1)$ field, dependent only on $\lambda$. At small $\beta$, the $\vec{n}$ spins are disordered, which means that the hedgehog current proliferated. As $\beta$ is increased above a critical value\cite{spins}, the spins order. This means that there is a large energy cost for hedgehog currents to exist. We say that the hedgehog currents are gapped, and only small loops of them are allowed. 
+
+At small $\lambda$, the $\tilde J_\mu$ variables are proliferated. In our original variables, this means that the boson currents are independent of the hedgehog currents. At large $\lambda$, the $\tilde J_\mu$ variables are gapped. The boson currents are bound to the hedgehot currents. The results of this can be seen in Fig.~\ref{heisbulk}. Initially there is no correlation between the current-current correlators of the boson currents (red line) and the current-current correlators of the hedgehog currents (blue line). As $\lambda$ is increased, the current-current correlators become identical as the currents are bound together. The inset in Fig.~\ref{heisbulk} shows the phase diagram. The phase boundaries are all straight lines since the model can be written as two uncoupled systems using the $\tilde J_\mu$ variables. 
+
+It is instructive to consider various subgroups of the $SO(3)$ symmetry. First, we can get a $\mathbb{Z}_2$ subgroup by considering reflecting the $\vec{n}$ spins around any plane. To see how this affects the hedgehog current, we can examine Eq.~(\ref{alpha}), taking the reference vector $N_0$ to be orthogonal to the direction of reflection. We see that reflecting the spin will change only the complex part, and therefore $Q_\mu\rightarrow-Q_\mu$ under such a reflection. For our entire action of have this reflection symmetry, we therefore need to combine such reflections with a ``charge-conjugation'' operation which takes $J_\mu\rightarrow -J_\mu$. 

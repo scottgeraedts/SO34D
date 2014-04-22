@@ -1,0 +1,231 @@
+\documentclass[prb,twocolumn]{revtex4}
+\usepackage{times}
+\usepackage{bbm}
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym,amsmath,amssymb,bm,euscript}
+\usepackage[dvips]{color}
+\usepackage{multirow}
+
+\def\ra{\rangle} % bra
+\def\la{\langle} % ket
+\def\uz{U(1)\times\mathbb{Z}_2}
+\def\ztwo{\mathbb{Z}_2}
+\begin{document}
+
+\title{}
+\date{\today}
+\pacs{}
+
+\author{Scott D. Geraedts}
+\author{Olexei I. Motrunich}
+\affiliation{Department of Physics, California Institute of Technology, Pasadena, California 91125, USA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{$SO(3)$ spins as a Heisenberg model}
+\label{section::Heisenberg}
+
+\subsection{Bulk properties}
+We will be studying the following action, in (3+1)-D Euclidean space-time:
+\begin{equation}
+S=S_{\rm spin}+\sum_{r,\mu} \frac{\lambda}{2}[ J_\mu(r)-c Q_\mu(r)]^2.
+\label{action}
+\end{equation}
+$S_{\rm spin}$ is an action which penalizes fluctuations in the $SO(3)$ spins. The second term describes the binding between bosons and hedgehogs. The bosons, $J_\mu$, are represented by integer-valued conserved currents defined on the links of a four-dimensional cubic lattice, where $r$ is the position on the lattice and $\mu\in (x,y,z,\tau)$ is a direction. These currents represent the world-lines of the bosons in the (3+1) dimensional space-time. The $Q_\mu$ variables represent the hedgehogs, which are also integer-valued conserved currents. The parameter $c$ is an integer. When the real number $\lambda$ is large, this term will attach $c$ bosons to each hedgehog. We will work with periodic boundary conditions, in the case with no net charge and no net hedgehog number, so that the $J_\mu$ and $Q_\mu$ currents have winding number zero.
+
+
+We will first represent the $SO(3)$ spins as unit vectors. This can be achieved with the following action, which describes a Heisenberg model:
+\begin{equation}
+S_{\rm spin}=\beta\sum_{R,\mu} \vec{n}(R)\cdot \vec{n}(R+\mu).
+\end{equation}
+Here $\vec{n}$ are unit vectors which represent the spins. They exist on a different lattice from the $J_\mu$ and $Q_\mu$ variables above. This lattice has its sites labelled by $R$, and they are located at the centers of the (hyper)cubes of the lattice in Eq.~(\ref{action}). 
+%more details about this?
+
+From these unit vectors, we can define the hedgehog current $Q_\mu$ using the prescription in Ref.~\onlinecite{LesikAshvin}, modified to four dimensions. We summarize this prescription here. One first defines variables $\alpha_\mu(R)$, which exist on links connecting the spins $\vec{n}_i\equiv\vec n(R)$ and $\vec{n}_j\equiv\vec n(R+\mu)$:
+\begin{equation}
+e^{-i\alpha_{\mu}(R)}=\frac{1+\vec{n}_i\cdot\vec{n}_j+\vec{n}_i\cdot\vec{N}_0+\vec{n}_j\cdot\vec{N}_0+i\vec{N}_0 \cdot(\vec{n}_i\times\vec{n}_j)}{\sqrt{(1+\vec{n}_i\cdot\vec{n}_j)(1+\vec{n}_i\cdot\vec{N}_0)(1+\vec{n}_j\cdot\vec{N}_0})}.
+\label{alpha}
+\end{equation}
+Here $\vec{N}_0$ is a reference vector which we choose arbitrarily. 
+We then define placket variables $\omega_{\mu\nu}$ as follows:
+\begin{equation}
+\omega_{\mu\nu}(R)={\rm floor}[\alpha_\mu(R+\nu)-\alpha_\mu(R)-\alpha_\nu(R+\mu)+\alpha_\nu(R)].
+\label{omega}
+\end{equation}
+One can show that changing the reference vectors $\vec{N}_0$ will change each $\alpha$ variable by a phase, and these phases will cancel in the definition of $\omega_{\mu\nu}$ so that it is independent of the reference vector. Finally, we can define the hedgehog current:
+\begin{equation}
+Q_\mu(r)=\frac{1}{2}\epsilon_{\mu\nu\rho\lambda}\partial_{\nu} \omega_{\rho\lambda}(R).
+\end{equation}
+If we consider only three dimensions of our four-dimensional lattice, the $\omega_{\mu\nu}$ involved in the definition of $Q_\mu$ make up a cube on the lattice indexed by $R$. We have defined the lattices so that there is a vertex of the lattice labelled by $r$ at the center of this cube, and this is where the $Q_\mu$ variables are defined. When all four dimensions are considered, this vertex becomes a link in the $\mu$ direction.  
+
+The above action can be studied in Monte Carlo. In addition to simple updates of $\vec{n}$ and $J_\mu$, when $\lambda$ is large one needs to try updates which change both $J_\mu$ and $Q_\mu$ in such a way that the second term in Eq.~(\ref{action}) is unchanged. To do this we update $\vec{n}$, then check to see if any $Q_\mu$ variables will change as a result of this update, and if so we update $J_\mu$ by $c$ times the change in $Q_\mu$. 
+
+In this work, we will monitor the ``internal energy per site'', $\epsilon= S /{\rm Vol}$, where ${\rm Vol}\equiv L^4$ is the volume of the system, which has dimension $L$. From this, we can determine the specific heat:
+\begin{equation}
+C=(\la \epsilon^2\ra-\la\epsilon\ra^2)\times{\rm Vol}.
+\end{equation}
+We can locate phase transitions in our model by looking for divergences in the specific heat. We also monitor the magnetization per spin of the $SO(3)$ spins:
+\begin{equation}
+M=\la |\sum_r \vec{n}(r)|\ra/{\rm Vol}.
+\end{equation}
+When the spins are disordered, the average of the magnetization will be proportional to $1/\sqrt{\rm Vol}$. Therefore we can use measurements of magnetization at different sizes to determine if the spins are ordered.
+
+To study the behavior of the boson currents, we monitor current-current correlators, defined as:
+\begin{equation}
+\rho_J(\vec{k})=\la J_\mu(\vec{k})J_\mu(-\vec{k})\ra
+\end{equation}
+where $k$ is a wave vector and 
+\begin{equation}
+J_\mu(\vec{k})\equiv\frac{1}{\rm \sqrt{Vol}}\sum_r J_\mu(r)e^{i\vec{k}\cdot r}.
+\end{equation}
+In the bulk of the system, $\rho_J(\vec{k})$ is independent of the direction $\mu$, and when we show numerical data we average over all directions to improve statistics. We will evaluate the correlators at the smallest non-zero $\vec{k}$, i.e.~if $\mu$ is in the $x$ direction, we will average over $\vec{k}_{min}=(0,\frac{2\pi}{L},0,0)$, $(0,0,\frac{2\pi}{L},0)$, and $(0,0,0,\frac{2\pi}{L})$. We also monitor the current-current correlators of the hedgehog currents, $\rho_Q(k)$, which are defined in the same way as for the boson currents.
+
+In the phase where the $J_\mu$ are gapped, $\rho_J\sim \vec{k}_{\rm min}^2$, while when the $J_\mu$ proliferate $\rho_J$ is independent of system size. Therefore we can use finite-size scaling of this quantity to determine the locations of phase transitions. For the hedgehog currents, $\rho_Q\sim \vec{k}_{\rm min}^2$, everywhere, so we cannot use finite-size scaling of these variables to find phase transitions. 
+
+To determine the phase diagram of the bulk of this model, it is convenient to define new variables
+\begin{equation}
+\tilde J_\mu(r)=J_\mu(r)-Q_\mu(r).
+\end{equation}
+Expressed in these variables, the first and second terms in Eq.~(\ref{action}) decouple, and we can study them independently. 
+At small $\beta$, the $\vec{n}$ spins are disordered, which means that the hedgehog currents are proliferated. As $\beta$ is increased, the spins order. This means that there is a large energy cost for hedgehog currents to exist. We say that the hedgehog currents are gapped, and only small loops of them are allowed. We can determine the location of the spin-ordering phase transition by finding divergences in the heat capacity, or by performing finite-size scaling on the magnetization as described above. The value found by our numerics agrees with the literature.\cite{McKenzie2}
+
+At small $\lambda$, the $\tilde J_\mu$ variables are proliferated. In our original variables, this means that the boson currents are independent of the hedgehog currents. At large $\lambda$, the $\tilde J_\mu$ variables are gapped. The boson currents are bound to the hedgehog currents. The results of this can be seen in Fig.~\ref{heisbulk}, which shows the current-current correlators for the boson and hedgehog currents. Initially there is no correlation between the bosons (red line) and the hedgehogs (blue line). As $\lambda$ is increased, the current-current correlators become identical as the bosons and hedgehogs are bound together. We can determine the location of the phase transition in $\lambda$ by studying divergences in the heat capacity, or by peforming finite-size scaling on $\rho_{\tilde J}$ as described above. The inset in Fig.~\ref{heisbulk} shows the phase diagram. At small $\lambda$ and $\beta$, both the boson and hedgehog currents proliferate and are not bound. At small $\lambda$ and large $\beta$ hedgehog currents are gapped, but boson currents proliferate, while at large $\lambda$ and $\beta$ all currents are gapped. When $\lambda$ is large and $\beta$ is small the system is in the `binding' phase, which we will argue is a topological phase.
+
+\begin{figure}
+\includegraphics[angle=-90,width=0.9\linewidth]{figures/bulklines.eps}
+\caption{Inset: Phase diagram for the bulk of the Heisenberg version of the model. The phase diagram is equivalent to a system of decoupled currents and spins. At $\lambda=0$, the system has a paramagnet-ferromagnet transition as $\beta$ is increased. As $\lambda$ is increased, the boson currents bind to the hedgehog currents. The loops in the phases show a `snapshot' of the phase. Red loops mean that boson currents are proliferated in the phase, while blue loops indicate proliferated hedgehog currents. The phase of interest is the upper left is the `binding' phase where bosons are bound to hedgehogs. The main figure shows the current-current correlations of the bosons and hedgehogs as $\lambda$ is increased while $\beta=0$. We see that the correlators become equal as the system enters the upper left phase, indicating that bosons have bound to hedgehogs.}
+\label{heisbulk}
+\end{figure}
+
+It is instructive to consider various subgroups of the $SO(3)$ symmetry. First, we can get a $\mathbb{Z}_2$ subgroup by considering reflecting the $\vec{n}$ spins around any plane. To see how this affects the hedgehog current, we can examine Eq.~(\ref{alpha}), taking the reference vector $N_0$ to be orthogonal to the direction of reflection. We see that reflecting the spin will change only the complex part, and therefore $Q_\mu\rightarrow-Q_\mu$ under such a reflection. For our entire action of have this reflection symmetry, we therefore need to combine such reflections with a ``charge-conjugation'' operation which takes $J_\mu\rightarrow -J_\mu$. 
+
+We will label the three directions the $\vec n$ spins can point in as $(a,b,c)$. In this work, we will find it convenient to consider a $U(1)\times \mathbb{Z}_2$ subgroup of the $SO(3)$ symmetry. Here the $\mathbb{Z}_2$ symmetry is a reflection around a plane described as above, which for concreteness we take to be the $ab$-plane. The $U(1)$ symmetry is a rotation in the $ab$-plane. 
+We can then think of our spins in an ``easy-plane'' picture where the spins are roughly in the $ab$-plane, with only small $c$-components. Though this picture of course breaks the $SO(3)$ symmetry, the $U(1)\times \mathbb{Z}_2$ symmetry is unbroken. 
+In the easy-plane picture we can define 'vortices' of the $U(1)$ spins which are the $ab$-components of the $\vec n$ variables. 
+
+The vortices are defined on the plackets of the cubic lattice. Therefore in the Monte Carlo they are represented as two-dimensional `world-sheets'. When dealing with vortices, one can gain intuition by thinking in terms of only the three spatial dimensions of our (3+1) dimensional space-time. In this picture the bosons and hedgehog are represented by point particles, while the vortices are represented by lines. The results of the next several paragraphs can be most easily understood by thinking in this picture.
+
+Ordinary $U(1)$ spins are undefined at the core of a vortex. However, our spins have a $c$-component which can point either up or down at the vortex core. We can define two species of vortices, which we call the $\uparrow$ and $\downarrow$ species, depending on whether $n_c$ (the $c$-component of the spin) is positive or negative. This description is useful since an $\uparrow$ vortex on top of a $\downarrow$ vortex is a hedgehog. Therefore our system can be thought of as a gas of vortex lines of two different species. The vortex lines can be of two different species, and they can change species. The locations where they change species are hedgehogs. This picture is shown in Fig.~\ref{monopoles}.
+
+Hedgehogs can have either positive or negative charge, and this is determined by the properties of the vortex line they are attached to. We can determine these relations by considering the symmetries of the model. We will need to consider two symmetries:
+\begin{eqnarray}
+&&\mathbb{Z}^c_2: \begin{array}{ccc}
+n_c& \rightarrow & -n_c\\
+Q_\mu &\rightarrow & -Q_\mu \\
+J_\mu &\rightarrow & -J_\mu 
+\end{array}\label{ztwoc}\\
+&&\mathbb{Z}^b_2: \begin{array}{ccc}
+n_b& \rightarrow & -n_b\\
+Q_\mu &\rightarrow & -Q_\mu \\
+J_\mu &\rightarrow & -J_\mu 
+\end{array}
+\end{eqnarray}
+
+$\ztwo^c$ interchanges $\uparrow$ and $\downarrow$ vortex lines, while $\ztwo^b$ changes the vorticity of the vortex lines, from clockwise to counter-clockwise and vice-versa. Both of these operations change the hedgehog charge. 
+Let us define a positive hedgehog charge to be one which turns an $\uparrow$ vortex into a $\downarrow$ vortex, on a clockwise vortex line (pictured third from left in Fig.~\ref{monopoles}). The charges of other hedgehogs can be determined from the above symmetries, and are shown in Fig.~\ref{monopoles}. 
+
+\begin{figure}
+\includegraphics[angle=-90,width=0.95\linewidth]{figures/monopoles.eps}
+\caption{As discussed in the text, our system has two species of vortex lines, $\uparrow$ and $\downarrow$. A hedgehog is a transition point between the two types of lines, with the charge of the hedgehog determined by the orientation of the vortex lines and their vorticity. Applying a Zeeman field to the surface means allowing only one type of vortex line through the surface. This leads to a correlation between the hedgehog charge and the vorticity at the surface, which is the origin of the Hall conductivity. This figure shows only the spatial dimensions of the system, therefore the hedgehogs are point particles and the vortices are lines.}
+\label{monopoles}
+\end{figure}
+
+We are claiming that the phase where hedgehogs proliferate and are bound to bosons is a symmetry-protected topological phase, which is protected by both the $U(1)$ symmetry from the conserved boson charges, and the $U(1)\times \mathbb{Z}_2$ symmetry from the spins. Therefore breaking either of these symmetries should destroy the phase. Breaking the boson charge symmetry causes an non-zero total charge in the system. However, in our system of periodic boundary conditions the total hedgehog number is zero. Therefore we cannot simulataneously have binding between bosons and hedgehogs and non-zero total boson charge, and so breaking this $U(1)$ symmetry will destroy the binding phase.
+
+We can break the $\uz$ symmetry by introducing a Zeeman field into our action:
+\begin{equation}
+S_{\rm Zeeman}=\sum_R h n_c(r).
+\label{Zeeman}
+\end{equation}
+Here $h$ is the strength of the Zeeman field, which points in the $c$-direction. We have chosen the Zeeman field to be perpendicular to the easy-plane, and so it breaks only the $\mathbb{Z}_2$ symmetry. If we had chosen a different direction for the field, it would break some other combination of the $\uz$ symmetry. In our picture of two species of vortices (Fig.~\ref{monopoles}), the Zeeman field forbids one of the species. Since the vortex lines cannot change species, hedgehogs are forbidden and the binding phase is destroyed. 
+
+The classification of Gu et al.~\cite{WenScience} leads us to expect that, with this symmetry in (3+1) dimensions, there will only be two phases which differ by topology. The parameter $c$ in Eq.~(\ref{action}) can be any integer, so different integers must lead to the same phase. We claim that when $c$ is odd, we realize a topological phase, while $c$ even gives a trivial phase. To see that even $c$ gives a trivial phase, we will now show how $c=2$ can be continuously connected to $c=0$ (which is obviously trivial). We start by considering two copies of our action:
+\begin{eqnarray}
+&&S=\beta\sum_{R,\mu}\left[ \vec{n}^{(1)}(R)\cdot \vec{n}^{(1)}(R+\mu)+\vec{n}^{(2)}(R)\cdot \vec{n}^{(2)}(R+\mu)\right]\nonumber\\
+&&+\frac{\lambda}{2}\sum_{r,\mu}\left( [ J_\mu^{(1)}(r)-c Q_\mu^{(1)}(r)]^2+[ J_\mu^{(2)}(r)-c Q_\mu^{(2)}(r)]^2\right),
+\label{doubleaction}
+\end{eqnarray}
+where the superscripts indicate which copy a variable is from, and we add the following terms:
+\begin{eqnarray}
+\delta S=A\sum_{R} \vec{n}^{(1)}(R)\cdot \vec{n}^{(2)}(R)+B\sum_{r,\mu} \cos[\Phi^{(1)}(r)-\Phi^{(2)}(r)].
+\label{AB}
+\end{eqnarray} 
+When $A$ is large, the first term above binds spins of different types together. The $\Phi$ variables can be thought of as conjugates to the $J_\mu$ variables. More precisely, in our path integral we usually sum over only the configurations of $J_\mu$ in which the currents are divergenceless. We can instead sum over all configurations of $J_\mu$, and include the following term in our path integral:
+\begin{equation}
+\int D\Phi e^{-i\sum_r (\sum_\mu\nabla_\mu J_\mu)\Phi(r)}
+\end{equation}
+which dynamically enforces the constraint that the boson currents be conserved. We then see that when $B$ is large, the second term in Eq.~(\ref{AB}) causes only the total current $J_\mu^1+J_\mu^2$ to be conserved, i.e.~the two species of currents can transform into each other.
+
+We see that when $A$ and $B$ are large, the hedgehog currents are \emph{added} ($Q^{\rm tot}_\mu=Q_\mu^1+Q_\mu^2$), while the boson currents are \emph{identified} ($J^{\rm tot}_\mu=J^1_\mu=J^2_\mu$). Therefore in this case Eq.~(\ref{doubleaction}) reduces to Eq.~(\ref{action}) with $c=2$. Furthermore, we argue that we can continuously deform $A=0$, $B=0$ to $A=\infty$, $B=\infty$ without undergoing a phase transition. By the same argument, we can deform $A=0$, $B=0$ to $A=-\infty$, $B=\infty$ without undergoing a phase transition. In this case, $Q^{\rm tot}_\mu=Q_\mu^1-Q_\mu^2=0$, and Eq.~(\ref{doubleaction}) is equivalent to Eq.~(\ref{action}) with $c=0$. Therefore we have shown that when $c=2$, the system is in the same phase as when $c=0$, and therefore when $c$ is even the system is topologically trivial.
+
+\subsection{Surface Properties}
+%give surface details
+Our justification of the topological nature of the binding phase will come from measurements made on its surface. We introduce a surface between the binding phase and the trivial insulator by using the spatially varying function $\eta(r)$ so that Eq.~(\ref{action}) becomes:
+\begin{equation}
+S=S_{\rm spin}+\sum_r \frac{\lambda}{2}(J_\mu(r)-c\eta(r) Q_\mu(r))^2.
+\end{equation}
+We will vary $\eta(r)$ in the $z$ direction, so that:
+\begin{equation}
+\eta(r)=
+\left\{ \begin{array}{cc}
+1 & z<L/2\\
+0 & \rm{otherwise}\\
+\end{array}\right.
+\end{equation}
+When $\eta(r)=0$, the system will be topologically trivial. In our system with periodic boundary conditions, this will lead to surfaces between a topological and non-topological phase at $z=0$ and $z=L/2$. 
+
+On the surface, we can measure all of the quantities which we measured in the bulk. However, we now only sum over the sites on the surface, and when averaging over all directions we only use the $x$, $y$ and $\tau$ directions. 
+
+The binding between hedgehogs and bosons leads to exotic physics on the surface. In both the binding and trivial phase, hedgehog currents proliferate, while boson currents proliferate in the binding phase but are gapped in the trivial phase, as shown in Fig.~\ref{surface}. Consider what happens when a hedgehog loop tries to cross the boundary between the phases. The boson current has to form a closed loop, and it can do this by running along the edge. However, this means that we have an unbound boson, which incurs a high energy cost. Therefore depending on the energetics of the system, hedgehogs may be forbidden from crossing the surface, or they may be allowed to cross, in which case we expect a large number of boson currents on the surface. 
+
+\begin{figure}
+\includegraphics[angle=-90,width=0.9\linewidth]{figures/surface.eps}
+\caption{A snapshot of the system, when it is spatially divided into a region which is a trivial insulator and a region which is in the binding phase. In the trivial phase boson currents are gapped and hedgehog currents proliferate. In the binding phase both currents are gapped individually, and they must form bound states. Large hedgehog current loops can exist in either region, but when such a loop tries to cross the boundary it leaves boson currents on the surface. Pictured is the case where hedgehogs currents cross the surface and lead to bosons condensing on the surface. Alternatively hedgehog currents could be energetically forbidden from crossing the boundary.}
+\label{surface}
+\end{figure}
+
+Our goal in this paper is to find physics on the surface of the binding phase which cannot exist in a purely (2+1) dimensional bosonic system. However, such physics is not guaranteed to exist. For example, if we tune $\beta$ and $\lambda$ so that the bulk of the system is in the binding phase, and study the surface, we find that the $SO(3)$ symmetry has spontaneously broken on the surface. This corresponds to the case where hedgehogs are forbidden from crossing the boundary. We know that the surface of a topological phase can spontaneously break symmetry, but a trivial phase can as well, and therefore this does not provide evidence that the binding phase is topological. We can try to find a more exotic phase by tuning $\beta$ and $\lambda$ only on the surface. We expect at small $\beta$ and $\lambda$, bosons on the surface will condense, leading to a spontaneously broken $U(1)$ symmetry, and corresponding to the case where many hedgehogs cross the surface. There may also be an intermediate phase where hedgehogs crossing the surface are only partially suppressed, leading to a more exotic phase.\cite{LesikAshvin} 
+
+The phase diagram of the surface of the binding phase is shown in the inset of Fig.~\ref{heissurf}. We see no intermediate phase between the two phases with spontaneously broken symmetry. Therefore the physics on the surface does not tell us whether the binding phase is topologically non-trivial. The phase diagram was determined by studying divergences in specific heat, as well as the finite-size scaling of both the magnetization and boson current-current correlators. Fig.~\ref{heissurf} shows the magnetization and $\rho_J$ on the surface, with $\beta_{\rm surf}=0$ and various $\lambda_{rm surf}$. The $SO(3)$ symmetry is broken when $M\sqrt{\rm Vol}$ grows with system size, and the boson charge $U(1)$ symmetry is broken when $\rho_J$ starts to increase. We can see that everywhere one of the symmetries is broken, so there is no intermediate phase. We also see only one peak in the heat capacity on such a sweep, implying the existence of only one phase transition.
+
+\begin{figure}
+\includegraphics[angle=-90,width=0.9\linewidth]{figures/heissurf.eps}
+\caption{The inset shows the phase diagram of the surface of the Heisenberg version of the model, without a Zeeman field. It was obtained by tuning the bulk into the phase where bosons and hedgehogs are bound, and then tuning $\beta$ and $\lambda$ {\em only on the surface}. If we have a topological phase, then the surface can either break a symmetry, have topological order, or gapless edge modes. We find that our surface always spontaneously breaks  a symmetry: either the bosons condense into a superfluid, or the spins align into a ferromagnet. This is consistent with the bulk being topological, but is also consistent with the bulk being topologically trivial. The main plot shows magnetization and boson current-current correlators, on a sweep in $\lambda_{\rm surf}$ for $\beta_{\rm surf}=0$. The magnetization is rescaled so that it is constant in system size in the disordered phase, and grows with system size in the ordered phase. The current-current correlators start to increase when the bosons condense. We see that there is no region where both the spins are disordered and the bosons gapped.}
+\label{heissurf}
+\end{figure}
+
+In order to observe exotic physics on the surface, we will apply a Zeeman field to it. We do this by adding a term similar to Eq.~(\ref{Zeeman}) to our action, but only on the surface of the model. Also, the fields $h$ on the two surfaces will have opposite sign.
+%explain why?
+
+Hall conductivity in this system of bosons and vortices will be due to correlations between vorticity of the spins and the boson charges,\cite{FQHE} so before we measure these correlations directly before moving on to the more complicated Hall conductivity measurement. In the absence of the Zeeman field, we can use the $\ztwo^c$ symmetry in Eq.~(\ref{ztwoc}) to change the sign of the boson charge without changing the vorticity, and so such correlations will vanish. This can be seen in Fig.~\ref{monopoles}, where, for example, on the top surface there is one clockwise vortex attached to a positively charged hedgehog (which is in turn bound to a positively charged boson), and another clockwise vortex is attached to a negatively charged hedgehog. Applying a Zeeman field corresponds to only allowing one type of vortex line to pass through the surface. In Fig.~\ref{monopoles}, this means that only solid lines are allowed to pass through the top surface. We can see that this leads to a correlation between the vorticity of the vortex on the surface and the charge of the hedgehog it is attached to. 
+
+To measure correlations between vortices and bosons we first compute vorticity $V_{\mu\nu}(r)$ using the following formula:
+\begin{eqnarray}
+&&V_{\mu\nu}(r)=s_{\mu}(R)-s_{\mu}(R-\nu)-s_{\nu}(R)+s_{\nu}(R-\mu)\\
+&&s_{\mu}(R)\equiv \left[\arctan\left(\frac{n_a(R)}{n_b(R)}\right) -\arctan\left(\frac{n_a(R-\mu)}{n_b(R-\mu)}\right)\right]{\rm mod}~2\pi.\nonumber
+\end{eqnarray}
+The vorticity is defined on the plackets of the $R$ lattice, however in four-dimensions a placket on the $R$ lattice is also a placket on the $r$ lattice, so we can define the vorticity on the same lattice as the bosons. We can then Fourier transform the vorticity as follows:
+\begin{equation}
+V_{xy}(k)=\frac{1}{\sqrt{L^3}}\sum_{r}  ^\prime V_{xy}(r) e^{ik\cdot r}.
+\end{equation}
+The prime on the sum indicates we have summed over all sites at a fixed $z$, which is chosen to be at the surface. We can then measure $\la V_{xy}(k_{\rm min})J_\tau(k_{\rm min})\ra$, and the results are shown in Fig.~\ref{heishall}. 
+
+We see that as soon as a Zeeman field is applied, the vortices and charges become correlated. Unlike the Hall conductivity, we do not expect these correlations to approach any universal value. We do note that the correlations on the two surfaces of the model are equal, which is encouraging as we would expect the Hall conductivity to be equal as well.
+
+In order to measure Hall conductivity, we will need to couple both the bosons and spins to external probing fields, and then use linear response theory to determine the conductivity. When we do this we run into a problem, which has to do with the way the hedgehog currents $Q_\mu$ were defined. We can see from Eq.~(\ref{omega}) that in the definition of $Q_\mu$ we employed the discontinuous function floor$(x)$. The discontinuity in this function prevents us from using linear response theory, and so we do not know how to calculate conductivity in this system. The next section is devoted to a way around this problem.
+
+\begin{figure}
+\includegraphics[angle=-90,width=0.9\linewidth]{figures/vortexcor.eps}
+\caption{Charge-vortex correlators for the Heisenberg version of the model. The $x$-axis is the strength of the Zeeman field. We see that as soon as a Zeeman field is turned on, the correlator takes a non-zero value. The value is non-universal, but is the same on the top and bottom surfaces. Since we do not know how to use linear response theory on this system we are unable to compute the Hall conductivity. }
+\label{heishall}
+\end{figure}
+
+
+
+\end{document}

@@ -1,0 +1,177 @@
+\documentclass[prb,twocolumn]{revtex4}
+\usepackage{times}
+\usepackage{bbm}
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym,amsmath,amssymb,bm,euscript}
+\usepackage[dvips]{color}
+\usepackage{multirow}
+
+\def\ra{\rangle} % bra
+\def\la{\langle} % ket
+
+\begin{document}
+
+\title{}
+\date{\today}
+\pacs{}
+
+\author{Scott D. Geraedts}
+\author{Olexei I. Motrunich}
+\affiliation{Department of Physics, California Institute of Technology, Pasadena, California 91125, USA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\section{Introduction}
+Since the discovery of the quantum Hall effect in the 1980s,\cite{vonKlitzing} topological phases have been a major area of research in condensed matter physics. More recently, the discovery of topological insulators (TI)\cite{HasanKane,QiZhang} has enhanced interest in the field. However, it is now realized that these phases are only the first examples of the large number of topological phases that may exist.\cite{WenSPT} In particular, though the phases just mentioned are composed of weakly interacting fermions, other kinds of systems can also realize topological phases. 
+
+Systems of interacting bosons have gained substantial recent attention in this context. In particular, much research has considered short-range entangled topological phases, known as symmetry protected topological phases (SPTs). Gu et al.\cite{WenSPT}~have produced tables giving the number of SPTs of interacting bosons possible for a given symmetry and dimension. Much work has also been done to learn about the properties of such phases. As one example, several papers have explored the properties of the bosonic analog of the integer quantum Hall effect.\cite{Senthil,Vishwanath,FQHE}. In addition, general properties of the surfaces of these phases have been studied. Exact models of topological phases, both SPTs, and long-ranged entangled ``symmetry enriched topological phases'' have been produced.\cite{FQHE}. Such models may allow other properties of topological phases to be determined. Most of these models are for one and two dimensions, and deal with short-range entangled phases.
+
+In this work, we present an exact model which realizes a phase which we call a bosonic topological insulator. Like the topological insulator, this is a three-dimensional phase, with time reversal and charge conservation ($U(1)$) symmetry. The bulk of the phase is insulating, but there can be exotic physics on the surface. 
+
+In a previous work\cite{FQHE} we realized topological phases in two dimensions by binding topological defects in two dimensions (vortices) to bosons. Here we will realize topological phases by binding topological defects in three dimensions (monopoles) to bosons. Our model consists of both conserved, charged bosons, which provide the $U(1)$ symmetry, and $SO(3)$ spins, which provide the monopoles. When one monopole is bound to an odd number of bosons, we realize an SPT analagous to the familiar topological insulator. If the monopole is bound to an even number of bosons, the system in a trivial insulator. This is consistent with the classification in Ref.~\onlinecite{WenSPT}, which says that with $U(1)\times \mathbb{Z}_2$ symmetry in (3+1) dimensions, only two different phases are possible. The idea of binding monopoles to bosons to realize an SPT is similar to the ``dyon condensation'' discussed in Ref.~\onlinecite{FisherTalk}.
+
+%We can also bind multiple monopoles to the bosons. By doing this we can realize a topological phase with long-ranged entanglement. 
+
+One challenge when studying topological phases of interacting bosons is to determine whether or not a phase is in fact topological. In a fermionic topological insulator one determines the that the phase is topological by using invariants from topological band theory, but these are clearly not applicable to interacting systems. We have studied our model in Monte Carlo simulations. This means that though we can measure expectation values, we do not have access to properties such as the ground-state degeneracy, or the statistics of the gapped excitations, which might indicate topological behavior. Unlike our recent work on bosonic quantum Hall phases\cite{FQHE}, we do not know of a bulk quantity which we can measure in Monte Carlo and which would indicate topological behavior.
+
+Our solution to this problem is to study the surface of the system. Therefore though we will be simulating the entire system, we will only be interested in quantities near the surface. Our goal is to observe a state on the surface which is ``holographic'', meaning that it could not exist in two dimensions, but can only exist as the surface of a three dimensional topological phase. We now know that there are many possible behaviors for the surface of a three dimensional topological phase. Though some of these phases are ``holographic'', such as the single Dirac cone on the surface of a fermionic TI, others are not; for example one can arrange for the surface of a fermionic TI to be a trivial ferromagnet. 
+
+Therefore, once we obtain a phase which is topological in the bulk, our next task is to tune parameters on the edge in such a way as to ensure that the surface phase is holographic. We accomplish this by applying a magnetic field locally on the surface. This induces a quantum Hall effect on the surface which we can measure. In the short-ranged entangled case, and similarly to the fermionic TI, the Hall conductivity on each edge should be half the smallest Hall conductivity possible in a integer quantum Hall effect. Since for a bosonic system the smallest Hall conductivity is 2, we expect (and observe) a Hall conductivity of 1 in the short-range entangled case. 
+%In the long-range entangled case, the Hall conductivity can be a rational number.
+
+In section \ref{section::Heisenberg}, we realize the $SO(3)$ spins as unit vectors. Though we find a non-zero Hall conductivity, for reasons explained in the text there are quantitative errors in this measurement, which prevents us from showing that the Hall conductivity is precisely 1. We avoid this problem in section \ref{section::CP1}, where we represent the $SO(3)$ spins using a $CP^1$ representation. This will allow us to measure a quantitatively correct Hall conductivity.
+
+\section{$SO(3)$ spins as unit vectors}
+\label{section::Heisenberg}
+
+\subsection{Model}
+We will be studying the following action, in (3+1)-D Euclidean space-time:
+\begin{equation}
+S=S_{\rm spin}+\sum_{r,\mu} \frac{\lambda}{2}( J_\mu(r)-c Q_\mu(r))^2.
+\label{action}
+\end{equation}
+$S_{\rm spin}$ is an action which penalizes fluctuations in the $SO(3)$ spins. The second term describes the binding between bosons and monopoles. The bosons, $J_\mu$, are represented by integer-valued conserved currents living on the links of a four-dimensional cubic lattice, where $r$ is the position on the lattice and $\mu$ is a direction. The $Q_\mu$ variables represent the monopoles, which are also integer-valued conserved currents. The parameter $c$ is an integer. When the real number $\lambda$ is large, this term will attach $c$ bosons to each monopole. We will work with periodic boundary conditions, in the case with no net charge and no net monopole number, so that the $J_\mu$ and $Q_\mu$ currents have winding number zero.
+
+
+We will first represent the $SO(3)$ spins as unit vectors. This can be achieved with the following action:
+\begin{equation}
+S_{\rm spin}=\beta\sum_{R,\mu} \vec{n}(R)\cdot \vec{n}(R+\mu).
+\end{equation}
+Here $\vec{n}$ are unit vectors which represent the spins. They exist on a different lattice from the $J_\mu$ and $Q_\mu$ variables above. This lattice has its sites labelled by $R$, and they are at the centers of the (hyper)cubes of the lattice in Eq.~(\ref{action}). From these unit vectors, we can define the monopole current $Q_\mu$ using the prescription in Ref.~\onlinecite{LesikAshvin1}.
+%more details about this?
+ 
+The above action can be studied studied in Monte Carlo. In addition to simple updates of $\vec{n}$ and $J_\mu$, when $\lambda$ is large one needs to try updates which change both $J_\mu$ and $Q_\mu$ in such a way that the second term in the action is unchanged. To do this we update $\vec{n}$, then check to see if any $Q_\mu$ variables will change as a result of this update, and if so we update $J_\mu$ by $c$ times the change in $Q_\mu$. 
+
+%give surface details
+Since we are interested in measuring phenomena on the surface of the bosonic TI, we need a way to introduce a surface into our model. We do this introducing the spatially varying function $\eta(r)$ so that Eq.~(\ref{action}) becomes:
+\begin{equation}
+S=S_{\rm spin}+\sum_r \frac{\lambda}{2}(J_\mu(r)-c\eta(r) Q_\mu(r))^2.
+\end{equation}
+We label the directions on our lattice $x,y,z$ and $\tau$. We will vary $\eta(r)$ in the $z$ direction, so that:
+\begin{equation}
+\eta(r)=
+\left\{ \begin{array}{cc}
+1 & z<L/2\\
+0 & \rm{otherwise}\\
+\end{array}\right.
+\end{equation}
+When $\eta(r)=0$, the system will be topologically trivial. In our system with periodic boundary conditions, this will lead to surfaces between a topological and non-topological phase at $z=0$ and $z=L/2$. Note that we will occasionally study bulk properties of the model, in this case we set $\eta(r)=1$ everywhere.
+
+In this work, we will monitor the ``internal energy per site'', $\epsilon= S /{\rm Vol}$, where ${\rm Vol}=L^4$ is the volume of the system, which has dimension $L$. From this, we can determine the specific heat:
+\begin{equation}
+C=(\la \epsilon^2\ra-\la\epsilon\ra^2)\times{\rm Vol}.
+\end{equation}
+We can locate phase transitions in our model by looking for divergences in the specific heat. We also monitor the magnetization per spin of the $SO(3)$ spins:
+\begin{equation}
+M=\la |\sum_r \vec{n}(r)|\ra/{\rm Vol}.
+\end{equation}
+To study the behavior of the boson currents, we monitor current-current correlators, defined as:
+\begin{equation}
+\rho_J(\vec{k})=\la J_\mu(\vec{k})J_\mu(-\vec{k})\ra
+\end{equation}
+where $k$ is a wave vector and 
+\begin{equation}
+J_\mu(\vec{k})\equiv\frac{1}{\rm \sqrt{Vol}}\sum_r J_\mu(r)e^{i\vec{k}\cdot r}.
+\end{equation}
+The above expression applies when we are measuring $\rho_J(k)$ in the bulk of the system. We will also be interested in its behavior on the surface of the system, in this case $\mu$ cannot be in the $z$ direction and ${\rm Vol}=L^3$.  
+In the bulk of the system, $\rho_J(\vec{k})$ is independent of the direction $\mu$, and when we show numerical data we average over all directions to improve statistics. On the surface we average $\mu$ over only the $x,y$ and $\tau$ directions. We will evaluate the correlators at the smallest non-zero $\vec{k}$, i.e.~if $\mu$ is in the $x$ direction and we are measuring in the bulk, we will average over $\vec{k}_{min}=(0,\frac{2\pi}{L},0,0)$, $(0,0,\frac{2\pi}{L},0)$, and $(0,0,0,\frac{2\pi}{L})$. When there is a surface we only do Fourier transforms in the $x$, $y$ and $\tau$ directions, and $\vec{k}_{\rm min}$ is chosen accordingly. We also monitor the current-current correlators of the monopole currents, $\rho_Q(k)$, which are defined in the same way as for the boson currents.
+
+In order to measure the Hall conductivity, we apply a Zeeman field to the surface by adding the following term to the action:
+\begin{equation}
+S_{\rm Zeeman}=h\sum_r [\delta(z=0)-\delta(z=L/2)] n_0.
+\label{Zeeman}
+\end{equation}
+Here $n_0$ is one component of the vector $\vec{n}=(n_0,n_1,n_2)$. 
+%why opposite fields
+
+We now discuss the symmetries of our model. The conventional topological insulator has $U(1)\times \mathbb{Z}_2$ symmetry, corresponding to charge conservation and time-reversal invariance. Previous authors\cite{SenthilVishwanath,Fishertalk} have found it convenient to enlarge this to $U(1)\times U(1)\times\mathbb{Z}_2$. The two $U(1)$ symmetries correspond to two species of conserved charges, and they can be reduced to a single $U(1)$ if one includes a perturbation which allows charges to change type. An important note about the expanded symmetry is that one can measure a Hall conductivity which corresponds to inducing a current in one species of charge (labelled, say, species 1) by applying an electric field which couples to the other species of charge (species 2). This is in fact the type of Hall conductivity that we will measure in this work. We denote it by $\sigma^{xy}_{12}$, where the subscript means that the conductivity is between two difference species of charge. If the $U(1)\times U(1)$ symmetry is broken down to a single $U(1)$, the Hall conductivity measured will be $2\sigma^{xy}_{12}$. 
+
+The symmetry of our model is $U(1)\times SO(3)$. However, $U(1)\times\mathbb{Z}_2$ can be expressed as a subgroup of this $SO(3)$. There are in fact several ways to do this, in this work we will be considering the $U(1)$ symmetry which corresponds to rotations of $\vec{n}$ in the $n_1,n_2$ plane, and the $\mathbb{Z}_2$ symmetry which takes $\vec{n}\rightarrow-\vec{n}$. We can see that the Zeeman field in Eq.~(\ref{Zeeman}) breaks this $\mathbb{Z}_2$ symmetry but leaves the $U(1)$ symmetry intact.
+
+After applying the Zeeman field we have, on the surface, a model with $U(1)\times U(1)$ symmetry. To measure its Hall conductivity, we first need to give our physical variables charge by coupling them to external $U(1)$ gauge fields. This is accomplished by adding the following terms to the action:
+\begin{eqnarray}
+&&S_{J{\rm ext}}=i\sum_{r,\mu}J_\mu A_{J\mu}^{\rm ext}(r)\\
+&&S_{n{\rm ext}}=\beta \sum_{R,\mu}[n_1(R)n_2(R+\mu)-n_2(R)n_1(R+\mu)]A_{n\mu}^{\rm ext}(R).
+\end{eqnarray}
+We can then use the Kubo formula to see that
+\begin{equation}
+\sigma^{xy}_{12}=\frac{i}{2\sin(\frac{\pi}{L})}\la J_x(\vec k) J^n_y(-\vec k)\ra
+\label{hall}
+\end{equation}
+where 
+\begin{equation}
+J^n_\mu(k)\equiv \frac{1}{\rm \sqrt{Vol}}\sum_R [n_1(R)n_2(R+\mu)-n_2(R)n_1(R+\mu)] e^{i\vec{k}\cdot R}.
+\end{equation}
+We can of course also calculate the conductivities $\sigma^{\tau x}_{12}$ and $\sigma^{y\tau}_{12}$ similarly, and where we present numerical results we have taken appropriate averages.
+
+
+\subsection{Results}
+
+\section{$SO(3)$ spins using $CP^1$ representation}
+\label{section::CP1}
+
+\subsection{Model}
+The following action represents the $SO(3)$ spins in the $CP^1$ representation:
+\begin{eqnarray}
+&&S_{\rm spin}=-\beta\sum_{s=1,2}\sum_{\mu,R} (z_s^\dagger(R)z_s(R+\hat\mu)e^{-ia_\mu(R)}+c.c.) \nonumber\\
+&&+\sum_{R,\mu,\nu} \cos[F_{\mu\nu}(R)].
+\end{eqnarray} 
+In this representation the $SO(3)$ spins are represented by two complex bosonic fields $z_1$,$z_2$. The spin, $\vec{n}$, can be extracted from the $z$ fields by writing them as a spinor $\mathbf{z}\equiv(z_1~z_2)^T$ and $\vec{n}=\mathbf{z^\dagger} \vec\sigma \mathbf{z}$, where the $\vec{\sigma}$ are Pauli matrices. The bosonic fields are minimally coupled to a compact gauge field $\vec{a}$. $F_{\mu\nu}\equiv \partial_\mu a_\nu-\partial_\nu a_\mu$, so the last term is similar to a Maxwell term for the compact gauge field. The variables in the above action live on a cubic lattice, where position on the lattice is given by $R$ and $\mu$,$\nu$ are directions.
+
+We find it convenient to break the $SO(3)$ symmetry down to $U(1)\times\mathbb{Z}_2$ explicitly by taking the ``easy-plane'' limit of the $CP^1$ model. This means that we align all the spins $\vec{n}$ in the $xy$-plane. This corresponds to fixing the magnitude of $z_1$ and $z_2$, and allowing only phase fluctuations. The $CP^1$ model in the easy-plane limit becomes:
+\begin{eqnarray}
+&&S_{\rm spin}=-\beta\sum_{s=1,2}\sum_{\mu,R} \cos[\nabla_\mu\phi_s(R)-a_\mu(R)]\nonumber\\
+&&+\sum_{\mu,\nu,R}\frac{K}{2}\left[F_{\mu\nu}(R)-2\pi B_{\mu\nu}(R)\right]^2.
+\label{sspin}
+\end{eqnarray}
+Here $\phi_1$ and $\phi_2$ are $2\pi$-periodic variables which represent the phases of the boson fields. We have also rewritten the last term in a ``Villain'' form where the cosine is replaced by the above term, with $B_{\mu\nu}$ an unconstrained, integer-valued dynamical variable. The third term is therefore still a $2\pi$ periodic function of $F_{\mu\nu}$, and therefore this does not change the universality class of the problem.
+
+Using the Villain form in the third term is advantageous as it allows us to define the monopole current:
+\begin{equation}
+Q_\mu(r)=\epsilon_{\mu\nu\rho\sigma}\partial_\nu B_{\rho\sigma}(R).
+\end{equation}
+Note that $Q_\mu$ exists on the lattice labelled by $r$, while $B_\mu\nu$ is on the lattice labelled by $R$.
+
+In this representation the $SO(3)$ symmetry has again been broken down to $U(1)\times \mathbb{Z}_2$. Here the $U(1)$ symmetry corresponds to rotation of the $\phi_s$ variables. The $\mathbb{Z}_2$ symmetry is an interchange of $\phi_1$ and $\phi_2$. To apply a Zeeman field we need to break this symmetry. We do this by replacing $\beta$ in Eq.~(\ref{sspin}) with $\beta_1$ for the $\phi_1$ term and $\beta_2$ for the $\phi_2$ term. We define the strength of the Zeeman field $h$ to be $\beta_1-\beta_2$. 
+%I don't understand why
+
+%justify this term?
+In order to measure Hall conductivity we couple the $\phi_s$ variables to an external $U(1)$ gauge field by modifying Eq.~(\ref{sspin}) in the following way:
+\begin{eqnarray}
+&&S_{{\rm spin}}=\sum_{\mu,R}\beta_1\cos(\nabla_\mu\phi_1-a_\mu+\frac{1}{2}A^{\rm ext}_{\phi\mu}) \\
+&&+ \sum_{\mu,R}\beta_2\cos(\nabla_\mu\phi_2-a_\mu-\frac{1}{2}A^{\rm ext}_{\phi\mu}) 
+\end{eqnarray}
+
+We can then calculate the Hall conductivity using the Kubo formula, and we get Eq.~(\ref{hall}), but with
+\begin{eqnarray}
+&&J^n_\mu(k)\equiv \frac{1}{\rm \sqrt{Vol}}\sum_R \frac{1}{2}[\beta_1\sin(\nabla_\mu\phi_1(R)-a_\mu) \\
+&&-\sin(\nabla_\mu\phi_2(R)-a_\mu(R)] e^{i\vec{k}\cdot R}.\nonumber
+\end{eqnarray}
+
+\section{Discussion}
+%discussion of charges bound to monopoles (connections with Matthew)
+\end{document}

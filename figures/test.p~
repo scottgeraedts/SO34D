@@ -1,0 +1,8 @@
+se xr [0.05:1]
+f=2*pi/4.
+vphys(x)=x/(x**2+c**2*f**2/d**2)
+tphys(x)=-c/d*f**2/(x**2+c**2*f**2/d**2)
+jspt(x)=vphys(x)/((1+tphys(x))**2+vphys(x)**2*f**2)
+qphys(x)=vphys(x)/(tphys(x)**2+vphys(x)**2*f**2)
+j13(x)=vphys(x)/((3+tphys(x))**2+vphys(x)**2*f**2)
+j23(x)=vphys(x)/((3+2*tphys(x))**2+vphys(x)**2*f**2*4)
