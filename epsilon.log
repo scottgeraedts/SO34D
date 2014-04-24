@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2014.1.28)  4 APR 2014 08:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2014.1.28)  24 APR 2014 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -248,72 +248,234 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fundus-calligra/calligra.sty
 Package: calligra 2012/04/10 v1.9 LaTeX package calligra
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 24.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 24.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 24.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 24.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 24.
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
-(./epsilon.aux)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count107
+\Hy@pagecounter=\count108
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count109
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+LaTeX Info: Redefining \href on input line 4952.
+\c@Hy@tempcnt=\count110
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count111
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count112
+\c@Item=\count113
+\c@Hfootnote=\count114
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks22
+\pdf@box=\box43
+\pdf@toks=\toks23
+\pdf@defaulttoks=\toks24
+\HyField@AnnotCount=\count115
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+))
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 32.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 32.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 32.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 32.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 32.
+
+(./epsilon.aux
+
+LaTeX Warning: Label `bulkvsurf' multiply defined.
+
+)
 \openout1 = `epsilon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 32.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
+
+(./epsilon.out) (./epsilon.out)
+\@outlinefile=\write4
+\openout4 = `epsilon.out'.
+
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 32.
 \openout3 = `epsilonNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 36.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 36.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 36.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 46.
- [1] [2]
-Overfull \hbox (5.18161pt too wide) detected at line 101
-\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+
+
+Package natbib Warning: Citation `KaneHassanRMP' on page 1 undefined on input l
+ine 50.
+
+[1]
+Underfull \hbox (badness 1221) in paragraph at lines 79--80
+[]\OT1/ptm/m/n/10 In our stud-ies of the two-dimensional `bosonic quan-
  []
 
 
-Overfull \hbox (0.71983pt too wide) detected at line 116
-\OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/
-cmm/m/it/10 R \OT1/cmr/m/n/10 + ([]\OML/cmm/m/it/10 ; []; []; \OMS/cmsy/m/n/10 
-^^@[]\OT1/cmr/m/n/10 )] = [][\OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 ![] \OT1/cmr/
-m/n/10 + \OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 + \OMS/cmsy/m
-/n/10 r[]\OML/cmm/m/it/10 ![]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 82.
+
+[2]
+Overfull \hbox (5.18161pt too wide) detected at line 108
+[]\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+ []
+
+
+Overfull \hbox (14.05284pt too wide) in alignment at lines 123--129
+ [][][] []
  []
 
 [3]
@@ -321,69 +483,143 @@ File: figures/heisbulkout.eps Graphic file (type eps)
  <figures/heisbulkout.eps>
 File: figures/monopoles.eps Graphic file (type eps)
  <figures/monopoles.eps> [4]
-Overfull \hbox (8.79964pt too wide) in alignment at lines 219--223
- [][][] []
- []
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 207.
 
 [5]
-File: figures/surface.eps Graphic file (type eps)
- <figures/surface.eps>
-Overfull \hbox (0.80684pt too wide) detected at line 287
-[] \OT1/cmr/m/n/10 = []
- []
-
-File: figures/heissurf.eps Graphic file (type eps)
-<figures/heissurf.eps> [6]
-File: figures/slabcurs.eps Graphic file (type eps)
- <figures/slabcurs.eps> [7]
-Overfull \hbox (11.54155pt too wide) in alignment at lines 322--325
+Overfull \hbox (8.79964pt too wide) in alignment at lines 242--246
  [][][] []
  []
 
+File: figures/surface.eps Graphic file (type eps)
+<figures/surface.eps> [6]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 331.
+
+File: figures/heissurf.eps Graphic file (type eps)
+<figures/heissurf.eps>
+File: figures/slabcurs.eps Graphic file (type eps)
+ <figures/slabcurs.eps> [7]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 356.
+
+
+Overfull \hbox (10.94157pt too wide) detected at line 376
+[]\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 ) \OMS
+/cmsy/m/n/10 ^^Q [] [] []\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y:
+ []
+
+[8]
 File: figures/vortexcor.eps Graphic file (type eps)
-<figures/vortexcor.eps> [8] [9]
+ <figures/vortexcor.eps>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 399.
+
+[9]
 File: figures/cp1bulkphase.eps Graphic file (type eps)
- <figures/cp1bulkphase.eps> [10]
-Underfull \hbox (badness 1275) in paragraph at lines 467--468
-[]\OT1/ptm/m/n/10 There are in fact mul-ti-ple con-fig-u-ra-tions of the vari-
+ <figures/cp1bulkphase.eps>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 457.
+
+[10]
+Underfull \hbox (badness 2600) in paragraph at lines 491--492
+[]\OT1/ptm/m/n/10 Note that in the pres-ence of sep-a-rate $\OML/cmm/m/it/10 U\
+OT1/cmr/m/n/10 (1)[]$ \OT1/ptm/m/n/10 and
  []
 
 [11]
+Underfull \hbox (badness 1275) in paragraph at lines 524--525
+[]\OT1/ptm/m/n/10 There are in fact mul-ti-ple con-fig-u-ra-tions of the vari-
+ []
+
+[12]
 File: figures/wittenout.eps Graphic file (type eps)
  <figures/wittenout.eps>
 File: figures/wittendiff.eps Graphic file (type eps)
  <figures/wittendiff.eps>
 File: figures/wittenphase.eps Graphic file (type eps)
 
-<figures/wittenphase.eps> [12]
+<figures/wittenphase.eps> [13]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 526.
+ on input line 600.
 
-[13]
-Overfull \hbox (2.27261pt too wide) in alignment at lines 580--583
+
+Overfull \hbox (2.27261pt too wide) in alignment at lines 638--641
  [][][] []
  []
 
+[14]
 File: figures/cp1surfphase.eps Graphic file (type eps)
-<figures/cp1surfphase.eps> [14]
+ <figures/cp1surfphase.eps> [15]
 File: figures/cp1surfacepairing.eps Graphic file (type eps)
- <figures/cp1surfacepairing.eps> [15]
+ <figures/cp1surfacepairing.eps> [16]
 File: figures/cp1hall.eps Graphic file (type eps)
 
-<figures/cp1hall.eps>
+<figures/cp1hall.eps> [17]
 File: figures/fracphase.eps Graphic file (type eps)
- <figures/fracphase.eps> [16]
+ <figures/fracphase.eps>
 File: figures/halldiff.eps Graphic file (type eps)
  <figures/halldiff.eps>
-(./epsilon.bbl) [17] [18] (./epsilon.aux) ) 
-Here is how much of TeX's memory you used:
- 3993 strings out of 493309
- 51707 string characters out of 6137848
- 129265 words of memory out of 5000000
- 7374 multiletter control sequences out of 15000+600000
- 18349 words of font info for 64 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 27i,8n,29p,1452b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+[18] (./epsilon.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
+ []\OT1/ptm/m/n/9 S. D. Ger-aedts and O. I. Motrunich,
+ []
 
-Output written on epsilon.dvi (18 pages, 142004 bytes).
+
+Underfull \hbox (badness 4967) in paragraph at lines 128--132
+ []\OT1/ptm/m/n/9 M. A. Metl-it-ski, C. L. Kane,  and M. P. A. Fisher,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--141
+ []\OT1/ptm/m/n/9 O. I. Motrunich and A. Vish-wanath,
+ []
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 797.
+ (./epsilon.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 797.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 797.
+Package rerunfilecheck Info: File `epsilon.out' has not changed.
+(rerunfilecheck)             Checksum: A0946C1D175EB767B64AE9B638C86AB6;1634.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7896 strings out of 493309
+ 111796 string characters out of 6137848
+ 236574 words of memory out of 5000000
+ 11231 multiletter control sequences out of 15000+600000
+ 18868 words of font info for 65 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 29i,13n,35p,1702b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on epsilon.dvi (19 pages, 226956 bytes).

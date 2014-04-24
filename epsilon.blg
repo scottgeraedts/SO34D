@@ -11,6 +11,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: epsilonNotes.bib
 Database file #2: SO34D.bib
+Warning--I didn't find a database entry for "KaneHassanRMP"
 control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -23,45 +24,45 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 20 entries,
+You've used 22 entries,
             5847 wiz_defined-function locations,
-            1726 strings with 17599 characters,
-and the built_in function-call counts, 17380 in all, are:
-= -- 1164
-> -- 387
-< -- 140
-+ -- 127
-- -- 101
-* -- 2542
-:= -- 1731
-add.period$ -- 18
-call.type$ -- 20
-change.case$ -- 72
-chr.to.int$ -- 26
-cite$ -- 20
-duplicate$ -- 1655
-empty$ -- 1255
-format.name$ -- 248
-if$ -- 3409
-int.to.chr$ -- 3
-int.to.str$ -- 27
-missing$ -- 225
-newline$ -- 106
-num.names$ -- 54
-pop$ -- 758
+            1748 strings with 18117 characters,
+and the built_in function-call counts, 19497 in all, are:
+= -- 1306
+> -- 440
+< -- 153
++ -- 142
+- -- 113
+* -- 2865
+:= -- 1936
+add.period$ -- 20
+call.type$ -- 22
+change.case$ -- 80
+chr.to.int$ -- 29
+cite$ -- 22
+duplicate$ -- 1840
+empty$ -- 1414
+format.name$ -- 278
+if$ -- 3843
+int.to.chr$ -- 2
+int.to.str$ -- 29
+missing$ -- 250
+newline$ -- 112
+num.names$ -- 60
+pop$ -- 831
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 100
 quote$ -- 0
-skip$ -- 656
+skip$ -- 743
 stack$ -- 0
-substring$ -- 487
-swap$ -- 1502
-text.length$ -- 41
+substring$ -- 573
+swap$ -- 1680
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 251
+type$ -- 279
 warning$ -- 1
-while$ -- 60
+while$ -- 67
 width$ -- 0
-write$ -- 193
-(There was 1 warning)
+write$ -- 209
+(There were 2 warnings)
