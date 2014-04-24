@@ -1,7 +1,7 @@
 set term epslatex color solid standalone 14
 set output 'cp1hall.tex'
 #set size 0.5
-set ylabel '$\sigma_{xy}^{12}$'
+set ylabel '$22\sigma_{xy}^{12}$'
 set xlabel '$|\beta_{\uparrow}-\beta_{\downarrow}|$'
 set ytics 0.2
 set yr[-0.1:]

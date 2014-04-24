@@ -33,7 +33,7 @@ se xr [2.8:5.2]
 set key top left
 set ylabel '{/Symbol r}'
 set xlabel '{/Symbol l}'
-pl 'heisbulk6' u (2*$3):10 w lp pt 5 lw 5 ps 2 lt 2 lc 3 title ' {/Symbol r}_Q' , \
- 'heisbulk6' u (2*$3):11 w lp pt 7 lw 5 ps 2 lt 1 title '{/Symbol r}_J' 
+pl 'heisbulk6' u (2*$3):11 w lp pt 7 lw 5 ps 2 lt 1 title '{/Symbol r}_J', \
+ 'heisbulk6' u (2*$3):10 w lp pt 5 lw 5 ps 2 lt 2 lc 3 title ' {/Symbol r}_Q' 
 
 unset multiplot

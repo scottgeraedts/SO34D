@@ -21,6 +21,8 @@ unset ytics
 unset xtics
 set label 'SO(3) broken' at first 0.3,first 4
 set label 'U(1) broken' at first 0.01,first 1
+set label 'both' at first 0.65, first 1.7
+set label 'broken' at first 0.65, first 1
 set xlabel '{/Symbol b}_{surf}'
 set ylabel '{/Symbol l}_{surf}'
 pl 'heissurfdat' u 1:2 w p pt 5 lt -1 title '', \
