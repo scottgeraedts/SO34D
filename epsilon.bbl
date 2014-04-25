@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{20}%
+\begin{thebibliography}{21}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,6 +50,14 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Hasan}\ and\ \citenamefont
+  {Kane}(2010)}]{KaneHasanRMP}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~Z.}\ \bibnamefont
+  {Hasan}}\ and\ \bibinfo {author} {\bibfnamefont {C.~L.}\ \bibnamefont
+  {Kane}},\ }\href {\doibase 10.1103/RevModPhys.82.3045} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {82}},\
+  \bibinfo {pages} {3045} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Qi}\ and\ \citenamefont {Zhang}(2011)}]{QiZhangRMP}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.-L.}\ \bibnamefont
@@ -128,6 +136,30 @@
   }\href {\doibase 10.1103/PhysRevB.88.035131} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo
   {pages} {035131} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kamal}\ and\ \citenamefont
+  {Murthy}(1993)}]{KamalMurthy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kamal}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Murthy}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\
+  }\textbf {\bibinfo {volume} {71}},\ \bibinfo {pages} {1911} (\bibinfo {year}
+  {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lau}\ and\ \citenamefont
+  {Dasgupta}(1989)}]{LauDasgupta}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.-h.}\ \bibnamefont
+  {Lau}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Dasgupta}},\
+  }\href {\doibase 10.1103/PhysRevB.39.7212} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo
+  {pages} {7212} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sachdev}\ and\ \citenamefont
+  {Park}(2002)}]{SachdevHedgehogs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Sachdev}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Park}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annals of Physics
+  N.~Y.}\ }\textbf {\bibinfo {volume} {298}},\ \bibinfo {pages} {58} (\bibinfo
+  {year} {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Motrunich}\ and\ \citenamefont
   {Vishwanath}(2004)}]{LesikAshvin}%
   \BibitemOpen
@@ -137,14 +169,6 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
   {70}},\ \bibinfo {pages} {075104} (\bibinfo {year} {2004})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Sachdev}\ and\ \citenamefont
-  {Park}(2002)}]{SachdevHedgehogs}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Sachdev}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Park}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annals of Physics
-  N.~Y.}\ }\textbf {\bibinfo {volume} {298}},\ \bibinfo {pages} {58} (\bibinfo
-  {year} {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {McKenzie}\ \emph {et~al.}(1982)\citenamefont
   {McKenzie}, \citenamefont {Domb},\ and\ \citenamefont {Hunter}}]{McKenzie2}%
   \BibitemOpen
@@ -162,14 +186,6 @@
   and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Xu}},\ }\href@noop
   {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv}\ ,\ \bibinfo {pages}
   {1309.0515}} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lau}\ and\ \citenamefont
-  {Dasgupta}(1989)}]{LauDasgupta}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.-h.}\ \bibnamefont
-  {Lau}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Dasgupta}},\
-  }\href {\doibase 10.1103/PhysRevB.39.7212} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo
-  {pages} {7212} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Motrunich}\ and\ \citenamefont
   {Senthil}(2002)}]{LesikSenthil}%
   \BibitemOpen
@@ -186,14 +202,6 @@
   {Franz}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
   Rev. B}\ }\textbf {\bibinfo {volume} {82}},\ \bibinfo {pages} {035105}
   (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kamal}\ and\ \citenamefont
-  {Murthy}(1993)}]{KamalMurthy}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Kamal}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Murthy}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\
-  }\textbf {\bibinfo {volume} {71}},\ \bibinfo {pages} {1911} (\bibinfo {year}
-  {1993})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Motrunich}\ and\ \citenamefont
   {Vishwanath}(2008)}]{LesikAshvin2}%
   \BibitemOpen
