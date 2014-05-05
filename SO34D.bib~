@@ -21,6 +21,9 @@
   publisher = {American Physical Society},
   doi = {10.1103/PhysRevB.87.155114},
 }
+@book{ChenNote,
+	title="{\rm Technically Chen et al. predict a classification of $\mathbb{Z}_2^2$ phases for the symmetry $U(1)\times\mathbb{Z}^T_2$, but one of the factors of $\mathbb{Z}_2$ comes from a topological phase which has only $\mathbb{Z}_2$ symmetry. We cannot study cases without $U(1)$ symmetry in our setup, so we cannot distinguish between these topological phases, and this leaves us with only $\mathbb{Z}_2$.}"
+} 
 
 @article{Max,
 	author={Metlitski, M.  and Fisher, M. P. A.},
@@ -82,13 +85,24 @@
   publisher = {American Physical Society},
   doi = {10.1103/PhysRevLett.110.046801},
 }
-@article{BiRasmussenXu13.
+@article{BiRasmussenXu13,
 	author={Bi, Z. and Rasmussen, A. and Xu, C},
 	journal={arXiv},
 	pages={1309.0515},
 	year={2013}
 }
-
+@article{Chen2014,
+	author={Chen, X. and Burnell, F. and Vishwanath, A. and Fidkowski, L.},
+	journal={arXiv},
+	pages={1403.6491},
+	year={2014}
+}
+@article{Cho2014,
+	author={Cho, G. and Teo, J. and Ryu, S.},
+	journal={arXiv},
+	pages={1403.2018},
+	year={2014}
+}
 
 %%%%%%%%%%%%%%%%%%%CP1 models
 @article{LesikAshvin,

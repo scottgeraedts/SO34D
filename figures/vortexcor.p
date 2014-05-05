@@ -1,8 +1,8 @@
 set term epslatex color solid standalone 11
 set output 'vortexcor.tex'
 set yrange [0:0.022]
-set xlabel '$h_{\mathrm surface}$'
-set ylabel ' $\langle V_{xy}(k)  J_t(-k)\rangle$' 3,0
+set xlabel '$h_{\textrm{surf}}$'
+set ylabel ' $\langle V_{xy}(k)  J_{\tau}(-k)\rangle$' 3,0
 
 pl 'vortexcor6' u 13:(-$21) w lp pt 5 lt 3 lw 2 ps 2 title 'L=6, top surface', \
  'vortexcor6' u 13:(-$22) w lp pt 11 lt 3 lw 2 ps 2 title 'L=6,bottom surface', \

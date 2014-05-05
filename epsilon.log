@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2014.1.28)  24 APR 2014 19:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2014.1.28)  2 MAY 2014 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -421,38 +421,38 @@ LaTeX Info: Redefining \nameref on input line 32.
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 32.
 \openout3 = `epsilonNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 50.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 50.
  [1]
 Underfull \hbox (badness 1221) in paragraph at lines 81--82
 []\OT1/ptm/m/n/10 In our stud-ies of the two-dimensional `bosonic quan-
  []
 
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 84.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 84.
@@ -466,11 +466,6 @@ Overfull \hbox (5.18161pt too wide) detected at line 110
 []\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
  []
 
-
-Overfull \hbox (14.05284pt too wide) in alignment at lines 125--131
- [][][] []
- []
-
 [3]
 File: figures/heisbulkout.eps Graphic file (type eps)
  <figures/heisbulkout.eps>
@@ -481,7 +476,7 @@ LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 209.
 
 [5]
-Overfull \hbox (8.79964pt too wide) in alignment at lines 244--248
+Overfull \hbox (8.79964pt too wide) in alignment at lines 248--252
  [][][] []
  []
 
@@ -489,64 +484,55 @@ File: figures/surface.eps Graphic file (type eps)
 <figures/surface.eps> [6]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 333.
+ on input line 335.
 
 File: figures/heissurf.eps Graphic file (type eps)
-<figures/heissurf.eps>
+<figures/heissurf.eps> [7]
 File: figures/slabcurs.eps Graphic file (type eps)
- <figures/slabcurs.eps> [7]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 358.
-
-
-Overfull \hbox (10.94157pt too wide) detected at line 379
+ <figures/slabcurs.eps>
+Overfull \hbox (10.94157pt too wide) detected at line 386
 []\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 ) \OMS
 /cmsy/m/n/10 ^^Q [] [] []\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y:
  []
 
-File: figures/vortexcor.eps Graphic file (type eps)
-<figures/vortexcor.eps>
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 402.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
-
 [8]
+File: figures/vortexcor.eps Graphic file (type eps)
+ <figures/vortexcor.eps>
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 407.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 409.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 409.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 409.
 
 [9]
 File: figures/cp1bulkphase.eps Graphic file (type eps)
  <figures/cp1bulkphase.eps>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 461.
+(hyperref)                removing `math shift' on input line 468.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 461.
+(hyperref)                removing `superscript' on input line 468.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 461.
+(hyperref)                removing `math shift' on input line 468.
 
 [10]
-Underfull \hbox (badness 2600) in paragraph at lines 495--496
+Underfull \hbox (badness 2600) in paragraph at lines 502--503
 []\OT1/ptm/m/n/10 Note that in the pres-ence of sep-a-rate $\OML/cmm/m/it/10 U\
 OT1/cmr/m/n/10 (1)[]$ \OT1/ptm/m/n/10 and
  []
 
 [11]
-Underfull \hbox (badness 1275) in paragraph at lines 528--529
+Underfull \hbox (badness 1275) in paragraph at lines 536--537
 []\OT1/ptm/m/n/10 There are in fact mul-ti-ple con-fig-u-ra-tions of the vari-
  []
 
@@ -560,26 +546,34 @@ File: figures/wittenphase.eps Graphic file (type eps)
 <figures/wittenphase.eps> [13]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 610.
+ on input line 620.
 
-
-Overfull \hbox (2.27261pt too wide) in alignment at lines 644--647
+[14]
+Overfull \hbox (2.27261pt too wide) in alignment at lines 658--661
  [][][] []
  []
 
-[14]
 File: figures/cp1surfphase.eps Graphic file (type eps)
- <figures/cp1surfphase.eps> [15]
+<figures/cp1surfphase.eps> [15]
 File: figures/cp1surfacepairing.eps Graphic file (type eps)
  <figures/cp1surfacepairing.eps> [16]
 File: figures/cp1hall.eps Graphic file (type eps)
 
 <figures/cp1hall.eps> [17]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 789.
+
 File: figures/fracphase.eps Graphic file (type eps)
- <figures/fracphase.eps>
+<figures/fracphase.eps> [18]
+File: figures/wittend.eps Graphic file (type eps)
+ <figures/wittend.eps>
+Overfull \hbox (11.67194pt too wide) in paragraph at lines 812--813
+ [][] 
+ []
+
 File: figures/halldiff.eps Graphic file (type eps)
- <figures/halldiff.eps>
-[18] (./epsilon.bbl
+<figures/halldiff.eps> [19] (./epsilon.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 112--117
  []\OT1/ptm/m/n/9 S. D. Ger-aedts and O. I. Motrunich,
  []
@@ -594,25 +588,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--173
  []\OT1/ptm/m/n/9 O. I. Motrunich and A. Vish-wanath,
  []
 
-) [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 814.
+) [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
  (./epsilon.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 814.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 837.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
 Package rerunfilecheck Info: File `epsilon.out' has not changed.
-(rerunfilecheck)             Checksum: A0946C1D175EB767B64AE9B638C86AB6;1634.
+(rerunfilecheck)             Checksum: 366C130CAA2E0FF1AFCFA23394D7CEFC;1664.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7899 strings out of 493309
- 111849 string characters out of 6137848
- 238105 words of memory out of 5000000
- 11234 multiletter control sequences out of 15000+600000
+ 7913 strings out of 493309
+ 112068 string characters out of 6137848
+ 238501 words of memory out of 5000000
+ 11247 multiletter control sequences out of 15000+600000
  18349 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,13n,35p,1695b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,35p,1703b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on epsilon.dvi (19 pages, 229464 bytes).
+Output written on epsilon.dvi (20 pages, 241496 bytes).
