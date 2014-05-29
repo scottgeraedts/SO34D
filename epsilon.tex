@@ -370,7 +370,6 @@ To do this, we fix the values of $\beta$ and $\lambda$ in the bulk and tune them
 \lambda_{\rm surf}, & z = z_R, ~\mu=\hat{x},\hat{y},\hat{\tau}\\
 \lambda_{\rm bulk}, & {\rm otherwise }
 \end{array}\right. ~.
-\label{bulkvsurf}
 \end{eqnarray}
 Here we focused on the boundary at $z_R$, and $\mu$ denotes link orientation for either $\beta$ or $\lambda$ terms.  We show the surface phase diagram in the inset of Fig.~\ref{heissurf}.  All data was taken with $\beta_{\rm bulk}=0$, $\lambda_{\rm bulk}=5.2$ parameters which put the bulk deep into the binding phase.  The surface phase diagram contains three distinct phases. When $\lambda_{\rm surf}$ is small the bosons are in a superfluid phase, breaking their $U(1)$ symmetry. This is the scenario pictured in Fig.~\ref{surface}, where hedgehogs can cross the surface, and these crossings are connected by boson currents. If $\beta_{\rm surf}$ is also small the $SO(3)$ symmetry is unbroken as the spins are disordered. As $\beta_{\rm surf}$ increases at small $\lambda_{\rm surf}$, the $SO(3)$ symmetry breaks, and so both symmetries are broken. At large $\lambda_{\rm surf}$ bosons see a large energy cost, and so the $U(1)$ symmetry is unbroken. This forbids hedgehogs from crossing the surface, leading to a system of $SO(3)$ spins with hedgehogs forbidden, which on the three-dimensional cubic latice is known to have magnetic order thus breaking the $SO(3)$ symmetry.\cite{LauDasgupta, LesikAshvin} 
 
@@ -643,7 +642,7 @@ Various other measurements can be made to support our conclusions. Measuring the
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \subsection{Surface Phase Diagram}
-
+\label{subsec::cp1surface}
 The measurement of the Witten effect is evidence that our binding phase is a bosonic topological insulator. We can now study the exotic physics on the surface of this topological phase. We expect to find the surface phases predicted in Ref.~\onlinecite{SenthilVishwanath}.
 
 We begin with some analytical arguments that provide a microscopic derivation of the surface field theory proposed in Ref.~\onlinecite{SenthilVishwanath}.
@@ -842,7 +841,7 @@ With $d\neq 1$, we have a new phase in the middle of the diagram, and no direct 
 
 Let us now focus on the properties of the binding phase at large $\lambda$ and small $K$, which binds $d$ hedgehogs to a boson. This phase is distinct from the topological phase discussed earlier in this work. In particular, it has intrinsic topological order. Condensing bound states of $d$ hedgehogs causes the electric field lines in the phase to fractionalize, i.e., it is possible to have electric field lines of strength $1/d$. These fractionalized electric field lines are one of the gapped excitations of the system. The other elementary gapped excitation is a single hedgehog, which binds a boson charge of $1/d$. The hedgehog has well-defined statistics as it encircles the electric field lines, and we expect it to acquire a phase of $2\pi/d$ when this happens around the elementary fractionalized line. The matter fields $z_\uparrow$ and $z_\downarrow$ are confined, but still act as sources and sinks for the electric field lines of integer strength, therefore the line topological excitations in the system are only defined up to an integer, and we can say that the system has $\mathbb{Z}_d$ topological order. 
 
-In the Appendix we derive the above properties by coupling a matter field to a system in which the monopoles of a compact electrodynamics model are bound to bosons. Such CQED$\times U(1)_{\rm boson}$ models allow changes of variables similar to those possible in two-dimensions\cite{FQHE}, which allow their properties to be readily determined. After the change of variables has been performed, we can add an additional matter field to the CQED model, and this gives us precisely the \cp~$\times U(1)_{\rm boson}$ model studied in this paper.
+In the Appendix we formally demonstrate the above properties by coupling spinon matter fields to a system in which the monopoles of a compact electrodynamics model are bound to bosons. Such CQED$\times U(1)_{\rm boson}$ models allow changes of variables similar to those possible in $U(1)\times U(1)$ models demonstrating SPT and SET phases in two dimensions\cite{FQHE}, which allow their properties to be readily determined. After the change of variables has been performed, we can add additional matter fields to the CQED model, and this gives us precisely the \cp~$\times U(1)_{\rm boson}$ model studied in this paper.
 
 The Witten effect and Hall effect measurements can be extended to the cases with multiple hedgehogs. For the Witten effect, the amount of bound charge will be modified, since now for each hedgehog there is a boson charge of $1/d$. Therefore the screening cloud will have a charge of $1/(2d)$. We have studied the cases of $d=2, 3$ in Monte Carlo and our results, shown in Fig.~\ref{wittend}, confirm this expectation. Recall that when measuring the Witten effect we used a `biasing' term to break degeneracy between positive and negative internal monopoles. This biasing term also introduces some excess charge at the location of the external monopole. This excess charge is screened by charges from the surrounding system. In the $d=1$ case, we found that for most values of $\gamma$, such as those shown in Fig.~\ref{diffgamma}, the screening length of this excess charge is quite short and so the Witten effect can still be clearly observed. In the case of $d>1$, the screening length seems to be much larger, which can lead to fluctuations of charge larger than the Witten effect we are trying to observe. We have chosen the biasing parameter in Fig.~\ref{wittend} in such a way as to minimize these fluctuations. At other values of $\gamma$ the Witten effect can still be observed but the observation is less clear due to these fluctuations.
 
@@ -866,7 +865,7 @@ Our results for the Hall conductivity are shown in Fig.~\ref{halldiff}. We find 
 
 \section{Discussion and Conclusions}
 %discussion of charges bound to monopoles (connections with Matthew)
-In this work we have realized a three dimensional bosonic topological insulator in a lattice model which can be studied in Monte Carlo. The model works by binding bosons to point topological defects (hedgehogs) to bosons. We determined the phase diagram in both the bulk and on the surface of the model. We were able to numerically extract signatures of topological behavior: in the bulk of the model we observed a Witten effect, while on the surface with time-reversal symmetry broken we found a quantized Hall conductance with values distinct from those possible in a purely (2+1)D system. We also found other surface properties consistent with the bosonic TI, including a direct transition between surface phases with different broken symmetries, and a surface phase which breaks no symmetries and may possess topological order of a kind that would break $\ztwot$ in a purely (2+1)D system. Finally, we can also realize a phase with intrinsic topological order in the bulk by binding multiple topological defects to each boson.
+In this work we have realized a three dimensional bosonic topological insulator in a lattice model which can be studied in Monte Carlo. The model works by binding bosons to point topological defects (hedgehogs). We determined the phase diagram in both the bulk and on the surface of the model. We were able to numerically extract signatures of topological behavior: in the bulk of the model we observed a Witten effect, while on the surface with time-reversal symmetry broken we found a quantized Hall conductance with values distinct from those possible in a purely (2+1)D system. We also found other surface properties consistent with the bosonic TI, including a direct transition between surface phases with different broken symmetries, and a surface phase which breaks no symmetries and may possess topological order of a kind that would break $\ztwot$ in a purely (2+1)D system. Finally, we can also realize a phase with intrinsic topological order in the bulk by binding multiple topological defects to each boson.
 
 Our model can in principle be used to extract other properties of the bosonic topological insulator. One possible future direction is to determine the properties of the surface phase transitions, especially the transition between the two different surface superfluids. Another direction would be to find direct evidence of the properties of the surface superfluids and surface topologically ordered phase, which are expected to have excitations with exotic properties. Such surface phases have generated much recent interest, as their excitations are expected to have properties not possible in a purely two-dimensional system.\cite{SenthilVishwanath,Chen2014,Cho2014} We could also investigate the surface phases of the SET phase discussed in Sec.~\ref{section::multiple}.
 
@@ -879,35 +878,31 @@ The Appendix contains a CQED model where multiple hedgehogs are bound to a boson
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 \section{SPT- and SET-like phases in a CQED$\times$boson model in (3+1)D.}
-Here we consider a model whose degrees of freedom are compact quantum electrodynamics (CQED) residing on a (3+1)-dimensional cubic space-time lattice labeled by $r$ and bosons residing on the dual lattice labeled by $R$.  Topological excitations in the CQED are monopoles, which are quantum particles in three spatial dimensions, and our model realizes condensation of bound states of $d$ monopoles and $c$ bosons.  We will argue that when $d=1$, these phases are analogs of Bosonic Symmetry-Protected Topological phases for such CQED$\times$boson systems and have quantized cross-transverse response given by the integer $c$.  On the other hand, when $d > 1$ these phases are analogs of Bosonic Symmetry-Enriched Topological phases and have fractional cross-transverse response given by a rational number $c/d$; these phases also feature fractionalized Faraday line excitations of the CQED and fractionalized boson particle excitations, as well as non-trivial mutual statistics between the particle and line excitations.  
+Here we consider a model whose degrees of freedom are compact quantum electrodynamics (CQED) residing on a (3+1)-dimensional cubic space-time lattice labelled by $R$ and bosons residing on a lattice labeled by $r$.  Topological excitations in the CQED are monopoles, which are quantum particles in three spatial dimensions, and our model realizes condensation of bound states of $d$ monopoles and $c$ bosons.  We will argue that when $d=1$, these phases are analogs of Bosonic Symmetry-Protected Topological phases for such CQED$\times$boson systems and have quantized cross-transverse response given by the integer $c$.  On the other hand, when $d > 1$ these phases are analogs of Bosonic Symmetry-Enriched Topological phases and have fractional cross-transverse response given by a rational number $c/d$; these phases also feature fractionalized Faraday line excitations of the CQED and fractionalized boson particle excitations, as well as non-trivial mutual statistics between the particle and line excitations.  
 
 While the CQED$\times$boson setting may appear artificial, this problem is relevant to the problem of SPT and SET phases of bosons in (3+1)D.  Specifically, in the main text we had a model with $U(1)\times U(1)$ symmetry, and we represented the first $U(1)$ system as an easy-plane \cp model which has two matter fields (``spinons'') coupled to a compact gauge field.
-We then considered binding of the monopoles in the compact gauge field and physical bosons of the second $U(1)$ symmetry.  The crucial difference with the CQED$\times$boson model is the additional matter fields present in the \cp$\times$boson model.  We will compare the systems without and with such matter fields and will argue that the matter fields destroy the distinctions of the former model, except when protected by additional discrete symmetries.
+We then considered binding of the monopoles in the compact gauge field and physical bosons of the second $U(1)$ symmetry.  The crucial difference with the CQED$\times$boson model is the additional matter fields present in the $CP^1\times$boson model.  We will compare the systems without and with such matter fields and will argue that the matter fields destroy the distinctions of the former model, except when protected by additional discrete symmetries.
 
 %While the CQED$\times$boson setting may appear artificial, this problem is relevant to the problem of SPT and SET phases of bosons in (3+1)D.  Specifically, one approach to such phases in models with U(1)$\times$U(1) symmetry is to represent the first U(1) system as an easy-plane CP1 model which has two matter fields (``spinons'') coupled to a compact gauge field.  Here we can also consider binding of the monopoles in the compact gauge field and physical bosons of the second U(1) symmetry.  The crucial difference with the CQED$\times$boson model is the additional matter fields present in the CP1$\times$boson model.  We will compare the systems without and with such matter fields and will argue that the matter fields destroy the distinctions of the former model, except when protected by additional discrete symmetries.
 
 Our CQED$\times$boson model is written in terms of compact gauge fields for the CQED part and integer-valued conserved currents for the boson part:
 \begin{widetext}
 \begin{eqnarray}
-&& Z[\hext_{\mu\nu}(r), \Aext_\rho(R)] = {\sum_{\cJ_\rho(R)}}^\prime \int_0^{2\pi} Da_\mu(r) \int_0^{2\pi} \prod_{\mu < \nu} d\gamma_{\mu\nu} \sum_{\uu_{\mu\nu}(r) = -\infty}^\infty
-e^{-S[a_\mu(r), \gamma_{\mu\nu}, \uu_{\mu\nu}(r), \cJ_\rho(R);~ \hext_{\mu\nu}(r), \Aext_\rho(R)]} ~,\\
-&& S \!=\! \frac{K}{2} \sum_{r, \mu < \nu} \! \left[\omega_{\mu\nu}(r) - \hext_{\mu\nu}(r) - 2\pi \uu_{\mu\nu}(r) \right]^2 
-+ \frac{\lambda}{2} \sum_{R\rho} \left[c \cQ_\rho(R) + c \frac{\EuFrak{g}^{\rm ext}_\rho(R)}{2\pi} - d \cJ_\rho(R) \right]^2 
-\! + i \sum_{R\rho} \cJ_\rho(R) \Aext_\rho(R) , ~~ \label{Sorig} \\
-&& \omega_{\mu\nu}(r) \equiv (\nabla_\mu a_\nu - \nabla_\nu a_\mu)(r) - \delta_{r_\mu = 0} \delta_{r_\nu = 0} \gamma_{\mu\nu} ~.
+&& Z[\hext_{\mu\nu}(R), \Aext_\rho(r)] = {\sum_{\cJ_\rho(r)}}^\prime \int_0^{2\pi} Da_\mu(R) \int_0^{2\pi} \prod_{\mu < \nu} d\gamma_{\mu\nu} \sum_{\uu_{\mu\nu}(R) = -\infty}^\infty
+e^{-S[a_\mu(R), \gamma_{\mu\nu}, \uu_{\mu\nu}(R), \cJ_\rho(r);~ \hext_{\mu\nu}(R), \Aext_\rho(r)]} ~,\\
+&& S \!=\! \frac{K}{2} \sum_{R, \mu < \nu} \! \left[\omega_{\mu\nu}(R) - \hext_{\mu\nu}(R) - 2\pi \uu_{\mu\nu}(R) \right]^2 
++ \frac{\lambda}{2} \sum_{R\rho} \left[c \cQ_\rho(r) + c \frac{\EuFrak{g}^{\rm ext}_\rho(r)}{2\pi} - d \cJ_\rho(r) \right]^2 
+\! + i \sum_{r\rho} \cJ_\rho(r) \Aext_\rho(r) , ~~ \label{Sorig} \\
+&& \omega_{\mu\nu}(R) \equiv (\nabla_\mu a_\nu - \nabla_\nu a_\mu)(R) - \delta_{R_\mu = 0} \delta_{R_\nu = 0} \gamma_{\mu\nu} ~.
+\label{A1}
 \end{eqnarray}
 \end{widetext}
-The above action can be compared to the action of Eqs.~(\ref{sspin}) and (\ref{cdbind}) in the main text, compared to the main text the above action is missing the $\beta$ term which couples the gauge field to ``spinons''. We also allow the option of binding $c$ bosons to each monopole, and we bind the CQED sector to an external probing field $\hext_{\mu\nu}(r)$, and boson sector to a probing field $\Aext_\rho$. (note that this is different from the way that the probing fields are treated in the main text)
-%For the CQED sector, we use $2\pi$-periodic compact gauge field variables $a_\mu(r)$ and use ``Villain cosine form'' for the $2\pi$-periodic Maxwell term, which is realized with the help of integer-valued placket variables $u_{\mu\nu}(r)$.  
-%The CQED sector is coupled to an external probing field $\hext_{\mu\nu}(r)$.  
+The above action can be compared to the action of Eqs.~(\ref{sspin}) and (\ref{cdbind}) in the main text. Compared to the main text, the above action is missing the $\beta$ term which couples the gauge field to ``spinons''. We also allow the option of binding $c$ bosons to each monopole. The conserved particles in the boson sector is coupled to a probing field $\Aext_\rho$ in the standard way, as in the main text. Unlike the main text, we have also coupled the conserved electric field lines in the CQED sector to a probing field $\hext_{\mu\nu}(R)$.  In the absence of the binding term, the coupling of the CQED sector to $\hext_{\mu\nu}$ is standard; the additional piece in the binding term, while not important for much of the discussed long-distance physics, is the correct form keeping together the ``Dirac string'' $\uu_{\mu\nu}$ and the probing field $\hext_{\mu\nu}$. In the main text the additional matter fields destroy the conservation of the electric field lines, and therefore the lines cannot be coupled to an external field.
 Variables $\gamma_{\mu\nu}$ realize specific ``fluctuating boundary conditions'' in the compact gauge field variables; in a representation in terms of an integer-valued electromagnetic field tensor, this corresponds to requiring zero total field for each component.  Such details of the boundary conditions are not important for the bulk properties but are nice for a precise mathematical treatment in a system with periodic connectedness assumed here.
-From variables $B_{\mu\nu}(r)$, we define monopole four-current $\cQ_\rho(R)$ as in Eq.~(\ref{mondef}) in the main text.
-%\begin{equation}
-%\cQ_\rho(R) \equiv \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma u_{\mu\nu} ~;
-%\end{equation}
-We similarly define four-vector $\EuFrak{g}^{\rm ext}_\rho(R)$ from $\hext_{\mu\nu}(r)$:
+From variables $B_{\mu\nu}(R)$, we define the monopole four-current $\cQ_\rho(r)$ as in Eq.~(\ref{mondef}) in the main text.
+We similarly define four-vector $\EuFrak{g}^{\rm ext}_\rho(r)$ from $\hext_{\mu\nu}(R)$:
 \begin{equation}
-\EuFrak{g}^{\rm ext}_\rho(R) \equiv  \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \hext_{\mu\nu} ~.
+\EuFrak{g}^{\rm ext}_\rho(r) \equiv  \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \hext_{\mu\nu} ~.
 \end{equation}
 %In the above equations and in what follows, we imply summation over repeated indices and use gradient symbols to denote appropriate lattice derivatives.  A precise definition on the lattice is 
 %\begin{eqnarray}
@@ -915,27 +910,28 @@ We similarly define four-vector $\EuFrak{g}^{\rm ext}_\rho(R)$ from $\hext_{\mu\
 %&& \left. ~~~~~~~~~~~~~~ - u_{\mu\nu}\left(R + \frac{\hat{\rho} - \hat{\sigma} - \hat{\mu} - \hat{\nu}}{2} \right) \right] ~, ~~~
 %\end{eqnarray}
 %which relates a ``monopolicity'' three-form defined on cubes (e.g., specified by an oriented triple $[\hat{\sigma}, \hat{\mu}, \hat{\nu}]$) to a one-form defined on links (specified by a direction $\hat{\rho}$) of the dual lattice in (3+1)D.  
-Note that thus defined $\cQ_\rho(R)$ are conserved currents satisfying $\sum_\rho \nabla_\rho \cQ_\rho(R) = 0$, and they also satisfy condition of zero total current in all directions: $\cQ_{{\rm tot}, \rho} \equiv \sum_R \cQ_\rho(R) = 0$ [using the current conservation, the last condition is equivalent to requiring zero current of $\cQ_\rho$ through any cut at fixed $R_\rho$, e.g., $\sum_R \delta_{R_\rho = 0} \cQ_\rho(R) = 0$].
+Note that thus defined $\cQ_\rho(r)$ are conserved currents satisfying $\sum_\rho \nabla_\rho \cQ_\rho(r) = 0$, and they also satisfy the condition of zero total current in all directions: $\cQ_{{\rm tot}, \rho} \equiv \sum_r \cQ_\rho(r) = 0$ [using the current conservation, the last condition is equivalent to requiring zero current of $\cQ_\rho$ through any cut at fixed $r_\rho$, e.g., $\sum_r \delta_{r_\rho = 0} \cQ_\rho(r) = 0$].
 
-For the boson sector, we use representation in terms of integer-valued conserved currents $\cJ_\rho(R)$, which satisfy $\sum_\rho \nabla_\rho \cJ_\rho(R) = 0$.  We also require that the total boson current is equal to zero for all directions, $\cJ_{{\rm tot}, \rho} = 0$.  The primed sum over $\cJ_\rho(R)$ in the partition sum signifies all such constraints.  The condition of zero total current is again convenient for precise treatment on finite systems [namely, for performing change of variables involving $\cJ$ and $\cQ$ currents, Eq.~(\ref{SL2Z}) below], while for bulk properties one can ignore these details.  The ``binding'' term parametrized by $\lambda$ is the key interaction in the action Eq.~(\ref{Sorig}) and wants to have bound states of $d$ monopoles and $c$ bosons when $\lambda$ is large [i.e., it is minimized when $(\cQ, \cJ) = (d, c) \times {\rm integer}$].  
+For the boson sector, we use a representation in terms of integer-valued conserved currents $\cJ_\rho(r)$, which satisfy $\sum_\rho \nabla_\rho \cJ_\rho(r) = 0$.  We also require that the total boson current is equal to zero for all directions, $\cJ_{{\rm tot}, \rho} = 0$.  The primed sum over $\cJ_\rho(r)$ in the partition sum signifies all such constraints.  The condition of zero total current is again convenient for precise treatment on finite systems [namely, for performing change of variables involving $\cJ$ and $\cQ$ currents, Eq.~(\ref{SL2Z}) below], while for bulk properties one can ignore these details.  The ``binding'' term parametrized by $\lambda$ is the key interaction in the action Eq.~(\ref{Sorig}) and wants to have bound states of $d$ monopoles and $c$ bosons when $\lambda$ is large [i.e., it is minimized when $(\cQ, \cJ) = (d, c) \times {\rm integer}$].  
 
-The CQED$\times$boson system has conserved electric field lines in the CQED sector and conserved particles in the boson sector; these are probed by external fields $\hext_{\mu\nu}(r)$ and $\Aext_\rho(R)$ respectively.
-The coupling of the boson current $\cJ_\rho$ to $\Aext_\rho$ is standard.  In the absence of the binding term, the coupling of the CQED sector to $\hext_{\mu\nu}$ is also standard; the additional piece in the binding term, while not important for much of the discussed long-distance physics, is the correct form keeping together the ``Dirac string'' $\uu_{\mu\nu}$ and the probing field $\hext_{\mu\nu}$. %(e.g., this gives standard form when the partition sum is expressed in terms of the integer-valued electromagnetic field tensor).
+%The CQED$\times$boson system has conserved electric field lines in the CQED sector and conserved particles in the boson sector; these are probed by external fields $\hext_{\mu\nu}(R)$ and $\Aext_\rho(r)$ respectively.
+%The coupling of the boson current $\cJ_\rho$ to $\Aext_\rho$ is standard.  %(e.g., this gives standard form when the partition sum is expressed in terms of the integer-valued electromagnetic field tensor).
 
 We first separate out the monopoles in the CQED sector as follows:
 \begin{widetext}
 \begin{eqnarray}
-\sum_{\uu_{\mu\nu}(r) = -\infty}^\infty \!\!\!\!\!\! [\dots ] \!=\!\!\!
-{\sum_{\cQ_\rho(R) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \uu_{\mu\nu}^{(0)}(R)}}^\prime \sum_{V_\mu(r) = -\infty}^\infty \sum_{\MM_{\mu\nu} = -\infty}^\infty 
-[\uu_{\mu\nu}(r) = \uu_{\mu\nu}^{(0)}(r) + (\nabla_\mu V_\nu - \nabla_\nu V_\mu)(r) + \delta_{r_\mu = 0} \delta_{r_\nu = 0} \MM_{\mu\nu} ]~.
+\sum_{\uu_{\mu\nu}(R) = -\infty}^\infty \!\!\!\!\!\! [\dots ] \!=\!\!\!
+{\sum_{\cQ_\rho(r) = \frac{1}{2} \epsilon \nabla_\sigma \uu_{\mu\nu}^{(0)}}}^\prime \sum_{V_\mu(R) = -\infty}^\infty \sum_{\MM_{\mu\nu} = -\infty}^\infty 
+[\uu_{\mu\nu}(R) = \uu_{\mu\nu}^{(0)}(R) + (\nabla_\mu V_\nu - \nabla_\nu V_\mu)(R) + \delta_{R_\mu = 0} \delta_{R_\nu = 0} \MM_{\mu\nu} ]~.
 \label{umn}
 \end{eqnarray}
 \end{widetext}
-Here $\uu_{\mu\nu}^{(0)}(r)$ is an integer-valued field whose monopolicity gives $\cQ_\rho(R)$ and is treated as a fixed function of $\vcQ(R)$.  $V_\mu(r)$ and $\MM_{\mu\nu}$ are independent integer-valued fields, where the latter appear from careful treatment of the boundary conditions.  Schematically, the above arises by dividing all configurations of $\uu_{\mu\nu}(r)$ into classes defined by $\cQ_\rho(R)$ and establishing how to recover all members of a given class from one representative.  Furthermore, any $\cQ_\rho(R)$ satisfying $\sum_\rho \nabla_\rho \cQ_\rho(R) = 0$ and $\cQ_{{\rm tot}, \rho} = 0$ can be represented as above using integer-valued $\uu_{\mu\nu}(r)$, so the primed sum over $\cQ_\rho(R)$ can be viewed as signifying these constraints.  
+%_{\rho\sigma\mu\nu}
+Here $\uu_{\mu\nu}^{(0)}(R)$ is an integer-valued field whose monopolicity gives $\cQ_\rho(r)$ and is treated as a fixed function of $\cQ_\rho(r)$.  $V_\mu(R)$ and $\MM_{\mu\nu}$ are independent integer-valued fields, where the latter appear from careful treatment of the boundary conditions.  Schematically, the above arises by dividing all configurations of $\uu_{\mu\nu}(R)$ into classes defined by $\cQ_\rho(r)$ and establishing how to recover all members of a given class from one representative.  Furthermore, any $\cQ_\rho(r)$ satisfying $\sum_\rho \nabla_\rho \cQ_\rho(r) = 0$ and $\cQ_{{\rm tot}, \rho} = 0$ can be represented as above using integer-valued $\uu_{\mu\nu}(R)$, so the primed sum over $\cQ_\rho(r)$ can be viewed as signifying these constraints.  
 
-A subtle point in the above is the redundancy in $V_\mu(r)$.  One way to address it precisely is as follows.  We can argue that from all links of the (3+1)D cubic lattice, we can select a subset of links such that we can take $V_\mu(r)$'s that are non-zero only on these links and that these $V_\mu(r)$'s are indeed independent integer-valued variables.  We can also argue that the original CQED theory can be equivalently formulated using compact gauge fields $a_\mu(r)$ that are non-zero only on exactly the same links.  We will assume this implicitly in all manipulations below.
+A subtle point in the above is the redundancy in $V_\mu(R)$.  One way to address it precisely is as follows.  We can argue that from all links of the (3+1)D cubic lattice, we can select a subset of links such that we can take $V_\mu(R)$'s that are non-zero only on these links and that these $V_\mu(R)$'s are indeed independent integer-valued variables.  We can also argue that the original CQED sector in Eq.~(\ref{A1}) can be equivalently formulated using compact gauge fields $a_\mu(R)$ that are non-zero only on exactly the same links.  We will assume this implicitly in all manipulations below, both for these variables and the related variables $V_\mu^\prime(R)$, $\tilde{V}_\mu(R)$, $v_\mu(R)$, $k_{\mu}(R)$, and $\tilde{a}_\mu(R)$. 
 
-We now operate with the constrained sums over the integer-valued currents $\cQ_\rho(R)$ and $\cJ_\rho(R)$, taken to be ``outside-most'' sums in the partition sum.  We change to new independent summation variables on each link:
+We now operate with the constrained sums over the integer-valued currents $\cQ_\rho(r)$ and $\cJ_\rho(r)$, taken to be ``outside-most'' sums in the partition sum.  We change to new independent summation variables on each link:\cite{Gen2Loops}
 \begin{equation}
 \begin{array}{c}
 \cP = a \cQ - b \cJ, \\
@@ -950,109 +946,120 @@ We now operate with the constrained sums over the integer-valued currents $\cQ_\
 \end{equation}
 Here $c$ and $d$ are the same integers as in the binding term in Eq.~(\ref{Sorig}), while $a$ and $b$ are new integers such that $ad - bc = 1$, which makes the above transformation invertible in $\mathbb{Z}$.  If $c$ and $d$ are mutually prime, which we will assume throughout, we can always find such $a$ and $b$, while the arbitrariness $a \to a + kc, b \to b + kd$ does not affect any physical properties discussed below.
 
-The new variables $\cP_\rho(R)$ and $\cG_\rho(R)$ are also conserved integer-valued currents with zero total currents.
-For each $\cP_\rho(R)$ and $\cG_\rho(R)$, we can uniquely determine $\cQ_\rho(R)$ and hence the corresponding $\uu_{\mu\nu}^{(0)}(r)$.  Let us also find for each $\cP_\rho(R)$ and $\cG_\rho(R)$ some fixed integer-valued $\uu_{P, \mu\nu}^{(0)}(r)$ and $\uu_{G, \mu\nu}^{(0)}(r)$ such that
+The new variables $\cP_\rho(r)$ and $\cG_\rho(r)$ are also conserved integer-valued currents with zero total currents.
+For each $\cP_\rho(r)$ and $\cG_\rho(r)$, we can uniquely determine $\cQ_\rho(r)$ and hence the corresponding $\uu_{\mu\nu}^{(0)}(R)$.  Let us also find for each $\cP_\rho(r)$ and $\cG_\rho(r)$ some fixed integer-valued $\uu_{P, \mu\nu}^{(0)}(R)$ and $\uu_{G, \mu\nu}^{(0)}(R)$ such that
 \begin{equation}
-\cP_\rho(R) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \uu_{P, \mu\nu}^{(0)} ~, \quad 
-\cG_\rho(R) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \uu_{G, \mu\nu}^{(0)} ~.
+\cP_\rho(r) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \uu_{P, \mu\nu}^{(0)} ~, \quad 
+\cG_\rho(r) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \uu_{G, \mu\nu}^{(0)} ~.
 \label{uPuG}
 \end{equation}
-We can guarantee that given the constraints satisfied by $\cP_\rho(R)$ and $\cG_\rho(R)$, such two-forms $\uu_{P, \mu\nu}(r)$ and $\uu_{G, \mu\nu}(r)$ always exist; while there are many possible choices, it does not matter which one we use as long as it stays fixed. 
+We can guarantee that given the constraints satisfied by $\cP_\rho(r)$ and $\cG_\rho(r)$, such two-forms $\uu_{P, \mu\nu}(R)$ and $\uu_{G, \mu\nu}(R)$ always exist; while there are many possible choices, it does not matter which one we use as long as it stays fixed. 
 We then have
 \begin{equation}
 \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \left[\uu_{\mu\nu}^{(0)} - d \uu_{P, \mu\nu}^{(0)} + b \uu_{G, \mu\nu}^{(0)} \right] = 0 ~,
 \end{equation}
-which implies that there exist integer-valued $V^\prime_\mu(r)$, $\MM^\prime_{\mu\nu}$ such that
+which implies that there exist integer-valued $V^\prime_\mu(R)$, $\MM^\prime_{\mu\nu}$ such that
 \begin{eqnarray}
-\uu_{\mu\nu}^{(0)}(r) &=& d \uu_{P, \mu\nu}^{(0)}(r) - b \uu_{G, \mu\nu}^{(0)}(r) \\
-&+& (\nabla_\mu V^\prime_\nu - \nabla_\nu V^\prime_\mu)(r) + \delta_{r_\mu = 0} \delta_{r_\nu = 0} \MM^\prime_{\mu\nu} ~.
+\uu_{\mu\nu}^{(0)}(R) &=& d \uu_{P, \mu\nu}^{(0)}(R) - b \uu_{G, \mu\nu}^{(0)}(R) \\
+&+& (\nabla_\mu V^\prime_\nu - \nabla_\nu V^\prime_\mu)(R) + \delta_{R_\mu = 0} \delta_{R_\nu = 0} \MM^\prime_{\mu\nu} ~.\nonumber
 \end{eqnarray}
-We can again take $V^\prime_\mu(r)$, $\MM^\prime_{\mu\nu}$ as fixed functions of $\cP_\rho(R)$ and $\cG_\rho(R)$, and can also take $V^\prime_\mu(r)$ to be non-zero on the same links as $V_\mu(r)$ in Eq.~(\ref{umn}).  Now we can express $\uu_{\mu\nu}(r)$ in Eq.~(\ref{umn}) as
+We can again take $V^\prime_\mu(R)$, $\MM^\prime_{\mu\nu}$ as fixed functions of $\cP_\rho(r)$ and $\cG_\rho(r)$.  Now we can express $\uu_{\mu\nu}(R)$ in Eq.~(\ref{umn}) as
 \begin{eqnarray}
-\uu_{\mu\nu}(r) &=&  d \uu_{P, \mu\nu}^{(0)}(r) - b \uu_{G, \mu\nu}^{(0)}(r) \\
-&+& (\nabla_\mu \tilde{V}_\nu - \nabla_\nu \tilde{V}_\mu)(r) + \delta_{r_\mu = 0} \delta_{r_\nu = 0} \tilde{\MM}_{\mu\nu} ~,
+\uu_{\mu\nu}(R) &=&  d \uu_{P, \mu\nu}^{(0)}(R) - b \uu_{G, \mu\nu}^{(0)}(R) \\
+&+& (\nabla_\mu \tilde{V}_\nu - \nabla_\nu \tilde{V}_\mu)(R) + \delta_{R_\mu = 0} \delta_{R_\nu = 0} \tilde{\MM}_{\mu\nu} ~,\nonumber
 \end{eqnarray}
-where we have changed the summation variables from $V_\mu(r)$, $\MM_{\mu\nu}$ to $\tilde{V}_\mu(r) = V_\mu(r) + V^\prime_\mu(r)$, $\tilde{\MM}_{\mu\nu} = \MM_{\mu\nu} + \MM^\prime_{\mu\nu}$.
+where we have changed the summation variables from $V_\mu(R)$, $\MM_{\mu\nu}$ to $\tilde{V}_\mu(R) = V_\mu(R) + V^\prime_\mu(R)$, $\tilde{\MM}_{\mu\nu} = \MM_{\mu\nu} + \MM^\prime_{\mu\nu}$.
 
 Let us write
 \begin{eqnarray}
-\tilde{V}_\mu(r) = d v_\mu(r) + k_\mu(r) ~,
+\tilde{V}_\mu(R) = d v_\mu(R) + k_\mu(R) ~,
 \tilde{\MM}_{\mu\nu} = d \mm_{\mu\nu} + \ell_{\mu\nu} ~,
 \end{eqnarray}
-where $v_\mu(r)$ and $\mm_{\mu\nu}$ are arbitrary integers, while $k_\mu(r)$ and $\ell_{\mu\nu}$ are integers $0, 1, \dots, d-1$. 
+where $v_\mu(R)$ and $\mm_{\mu\nu}$ are arbitrary integers, while $k_\mu(R)$ and $\ell_{\mu\nu}$ are integers $0, 1, \dots, d-1$. 
 Upon simple grouping of terms, we now have
 \begin{eqnarray}
-&& \omega_{\mu\nu}(r) - \hext_{\mu\nu}(r) - 2\pi \uu_{\mu\nu}(r) = \\
-&& d \left[\tilde{\omega}_{\mu\nu}(r) - \frac{1}{d} \hext_{\mu\nu}(r) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(r) - 2\pi \tilde{\uu}_{\mu\nu}(r) \right] ~,~
+&& \omega_{\mu\nu}(R) - \hext_{\mu\nu}(R) - 2\pi \uu_{\mu\nu}(R) = \\
+&& d \left[\tilde{\omega}_{\mu\nu}(R) - \frac{1}{d} \hext_{\mu\nu}(R) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(R) - 2\pi \tilde{\uu}_{\mu\nu}(R) \right] ~,~\nonumber
 \end{eqnarray}
 where we defined
 \begin{eqnarray}
-\tilde{\omega}_{\mu\nu}(r) &\equiv& (\nabla_\mu \tilde{a}_\nu - \nabla_\nu \tilde{a}_\mu)(r) - \delta_{r_\mu = 0} \delta_{r_\nu = 0} \tilde{\gamma}_{\mu\nu} ~, \\
-\tilde{a}_\mu(r) &\equiv& \frac{a_\mu(r)}{d} - \frac{2\pi k_\mu(r)}{d} ~, \\
-\tilde{\gamma}_{\mu\nu} &\equiv& \frac{\gamma_{\mu\nu}}{d} + \frac{2\pi \ell_{\mu\nu}}{d} ~,
+\tilde{\omega}_{\mu\nu}(R) &\equiv& (\nabla_\mu \tilde{a}_\nu - \nabla_\nu \tilde{a}_\mu)(R) - \delta_{R_\mu = 0} \delta_{R_\nu = 0} \tilde{\gamma}_{\mu\nu} ~,\nonumber \\
+\tilde{a}_\mu(R) &\equiv& \frac{a_\mu(R)}{d} - \frac{2\pi k_\mu(R)}{d} ~,\label{atilde} \\
+\tilde{\gamma}_{\mu\nu} &\equiv& \frac{\gamma_{\mu\nu}}{d} + \frac{2\pi \ell_{\mu\nu}}{d} ~,\nonumber
 \end{eqnarray}
 and
 \begin{eqnarray}
-\tilde{\uu}_{\mu\nu}(r) \equiv \uu_{P, \mu\nu}^{(0)}(r) + (\nabla_\mu v_\nu - \nabla_\nu v_\mu)(r) + \delta_{r_\mu = 0} \delta_{r_\nu = 0} \mm_{\mu\nu} ~.
+\tilde{\uu}_{\mu\nu}(R) \equiv \uu_{P, \mu\nu}^{(0)}(R) + (\nabla_\mu v_\nu - \nabla_\nu v_\mu)(R) + \delta_{R_\mu = 0} \delta_{R_\nu = 0} \mm_{\mu\nu} ~.\nonumber
 \end{eqnarray}
-Note that the integration over $a_\mu(r)$ from $0$ to $2\pi$ and summation over $k_\mu(r)$ from $0$ to $d-1$ effectively corresponds to integration over $\tilde{a}_{\mu}(r)$ from $0$ to $2\pi$.  The same holds for $\tilde{\gamma}_{\mu\nu}$.
-We can also express $\cP_\rho(R)$ from Eq.~(\ref{uPuG}) as $\cP_\rho(R) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \tilde{\uu}_{\mu\nu}$ and see that $\uu_{P, \mu\nu}^{(0)}(r)$, $v_\mu(r)$, and $\mm_{\mu\nu}$ only appear in the above combination that gives $\tilde{\uu}_{\mu\nu}(r)$.  Furthermore, similarly to Eq.~(\ref{umn}), the summation over constrained $\cP_\rho(R)$ and unconstrained $v_\mu(r)$ and $\mm_{\mu\nu}$ is equivalent to a summation over unconstrained $\tilde{\uu}_{\mu\nu}$.  The partition sum becomes
+Note that the integration over $a_\mu(R)$ from $0$ to $2\pi$ and summation over $k_\mu(R)$ from $0$ to $d-1$ effectively corresponds to integration over $\tilde{a}_{\mu}(R)$ from $0$ to $2\pi$.  The same holds for $\tilde{\gamma}_{\mu\nu}$.
+We can also express $\cP_\rho(r)$ from Eq.~(\ref{uPuG}) as $\cP_\rho(r) = \frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \tilde{\uu}_{\mu\nu}$ and see that $\uu_{P, \mu\nu}^{(0)}(R)$, $v_\mu(R)$, and $\mm_{\mu\nu}$ only appear in the above combination that gives $\tilde{\uu}_{\mu\nu}(R)$.  Furthermore, similarly to Eq.~(\ref{umn}), the summation over constrained $\cP_\rho(r)$ and unconstrained $v_\mu(R)$ and $\mm_{\mu\nu}$ is equivalent to a summation over unconstrained $\tilde{\uu}_{\mu\nu}$.  The partition sum becomes
 \begin{widetext}
 \begin{eqnarray}
-&& Z[\hext_{\mu\nu}(r), \Aext_\rho(R)] = {\sum_{\cG_\rho(R)}}^\prime \int_0^{2\pi} D\tilde{a}_\mu(r) \int_0^{2\pi} \prod_{\mu < \nu} d\tilde{\gamma}_{\mu\nu} \sum_{\tilde{\uu}_{\mu\nu}(r) = -\infty}^\infty 
-e^{-S[\tilde{a}_\mu(r), \tilde{\gamma}_{\mu\nu}, \tilde{\uu}_{\mu\nu}(r), \cG_\rho(R);~ \hext_{\mu\nu}(r), \Aext_\rho(R)]} ~,\\
-&& S = \frac{K d^2}{2} \sum_{r, \mu < \nu} \left[\tilde{\omega}_{\mu\nu}(r) - \frac{1}{d} \hext_{\mu\nu}(r) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(r) - 2\pi \tilde{\uu}_{\mu\nu}(r) \right]^2 
-+ \frac{\lambda}{2} \sum_{R\rho} \left[\cG_\rho(R) + c \frac{\EuFrak{g}^{\rm ext}_\rho(R)}{2\pi} \right]^2 \label{SKlambda} \\
-&& ~~~ + i \sum_{R\rho} \left[c \left(\frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \tilde{u}_{\mu\nu} \right)(R) - a \cG_\rho(R) \right] \Aext_\rho(R) ~.
+&& Z[\hext_{\mu\nu}(R), \Aext_\rho(r)] = {\sum_{\cG_\rho(r)}}^\prime \int_0^{2\pi} D\tilde{a}_\mu(R) \int_0^{2\pi} \prod_{\mu < \nu} d\tilde{\gamma}_{\mu\nu} \sum_{\tilde{\uu}_{\mu\nu}(R) = -\infty}^\infty 
+e^{-S[\tilde{a}_\mu(R), \tilde{\gamma}_{\mu\nu}, \tilde{\uu}_{\mu\nu}(R), \cG_\rho(r);~ \hext_{\mu\nu}(R), \Aext_\rho(r)]} ~,\\
+&& S = \frac{K d^2}{2} \sum_{R, \mu < \nu} \left[\tilde{\omega}_{\mu\nu}(R) - \frac{1}{d} \hext_{\mu\nu}(R) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(R) - 2\pi \tilde{\uu}_{\mu\nu}(R) \right]^2 
++ \frac{\lambda}{2} \sum_{r\rho} \left[\cG_\rho(r) + c \frac{\EuFrak{g}^{\rm ext}_\rho(r)}{2\pi} \right]^2 \label{SKlambda} \\
+&& ~~~ + i \sum_{r\rho} \left[c \left(\frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \tilde{\uu}_{\mu\nu} \right)(r) - a \cG_\rho(r) \right] \Aext_\rho(r) ~.\nonumber
 \end{eqnarray}
 \end{widetext}
-In this reformulation, we have a new CQED system represented by the compact gauge fields $\tilde{a}_\mu(r) \in [0, 2\pi)$ and a new boson system represented by the conserved current variables $\cG_\rho(R)$.  We will now argue that these new variables give a direct representation of gapped excitations in the topological phase obtained for small $K$ and $\lambda$.  
+In this reformulation, we have a new CQED system represented by the compact gauge fields $\tilde{a}_\mu(R) \in [0, 2\pi)$ [and fluctuating boundary conditions $\gamma_{\mu\nu}\in [0,2\pi)$], and a new boson system represented by the conserved current variables $\cG_\rho(r)$.  We will now argue that these new variables give a direct representation of gapped excitations in the topological phase obtained for small $K$ and large $\lambda$.  
 
-For a quick illustration, let us set $\Aext_\rho(R) = 0$ everywhere.  In this case, we can perform summation over $\tilde{u}_{\mu\nu}(r)$ independently on each placket and obtain the Villain cosine for the combination
+For a quick illustration, let us set $\Aext_\rho(r) = 0$ everywhere.  In this case, we can perform summation over $\tilde{\uu}_{\mu\nu}(R)$ independently on each placket and obtain the Villain cosine for the combination
 \begin{eqnarray}
-\Theta_{\mu\nu}(r) \equiv \tilde{\omega}_{\mu\nu}(r) - \frac{1}{d} \hext_{\mu\nu}(r) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(r) ~.
+\Theta_{\mu\nu}(R) \equiv \tilde{\omega}_{\mu\nu}(R) - \frac{1}{d} \hext_{\mu\nu}(R) + \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(R) ~.
 \end{eqnarray}
-Such cosine terms represent dynamics (motions) of quantum lines whose segments are created by $e^{i \tilde{a}_\mu(r)}$.  From the coupling to $\hext_{\mu\nu}(r)$, we conclude that the new lines carry electric field strength $1/d$ of the original electric field unit.  On the other hand, from the appearance of $\uu_{G, \mu\nu}^{(0)}(r)$ in $\Theta_{\mu\nu}(r)$ we conclude that the new lines ``see'' each $\cG$ particle as if it is carrying $b/d$ of monopole charge of the new CQED system.  We can state this equivalently as follows:  When a $\cG$ particle is taken around such a new line, there is a phase of $2\pi b/d$, i.e., there is non-trivial mutual statistics between the new lines and new particles.  For sufficiently small $K$ and large $\lambda$, the quantum lines created by $e^{i \tilde{a}_\mu(r)}$ and the particles represented by $\cG_\rho(r)$ are clearly gapped and are the only excitations in this phase.
+Such cosine terms represent dynamics (motions) of quantum lines whose segments are created by $e^{i \tilde{a}_\mu(R)}$.  From the coupling to $\hext_{\mu\nu}(R)$, we conclude that the new lines carry electric field strength $1/d$ of the original electric field unit.  On the other hand, from the appearance of $\uu_{G, \mu\nu}^{(0)}(R)$ in $\Theta_{\mu\nu}(R)$ we conclude that the new lines ``see'' each $\cG$ particle as if it is carrying $b/d$ of monopole charge of the new CQED system.  We can state this equivalently as follows:  When a $\cG$ particle is taken around such a new line, there is a phase of $2\pi b/d$, i.e., there is non-trivial mutual statistics between the new lines and new particles.  For sufficiently small $K$ and large $\lambda$, the quantum lines created by $e^{i \tilde{a}_\mu(R)}$ and the particles represented by $\cG_\rho(r)$ are clearly gapped and are the only excitations in this phase.
 
 By working a bit harder and keeping track of the $\Aext$ gauge field, we can also show that the $\cG$ particles carry charge of $1/d$ with respect to $\Aext$ (i.e., we also have boson charge fractionalization in this phase if $d > 1$), and that the system has a quantized cross-transverse response characterized by a rational number $c/d$.
-First, we note that the current which couples to $\Aext_\rho(R)$ can be written as
+First, we note that the current which couples to $\Aext_\rho(r)$ can be written as
 \begin{eqnarray*}
-c \cP_\rho(R) - a \cG_\rho(R) = c \left[\cP_\rho(R) - \frac{b}{d} \cG_\rho(R) \right] - \frac{1}{d} \cG_\rho(R) \\
-= c \left(\frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \left[\tilde{\uu}_{\mu\nu} - \frac{b}{d} \uu_{G, \mu\nu}^{(0)} \right]\right)(R) - \frac{1}{d} \cG_\rho(R) ~,
+c \cP_\rho(r) - a \cG_\rho(r) = c \left[\cP_\rho(r) - \frac{b}{d} \cG_\rho(r) \right] - \frac{1}{d} \cG_\rho(r) \\
+= c \left(\frac{1}{2} \epsilon_{\rho\sigma\mu\nu} \nabla_\sigma \left[\tilde{\uu}_{\mu\nu} - \frac{b}{d} \uu_{G, \mu\nu}^{(0)} \right]\right)(r) - \frac{1}{d} \cG_\rho(r) ~,
 \end{eqnarray*}
-where in the first line we used $ad - bc = 1$, and the manipulation is such as to separate out the same combination of $\tilde{\uu}_{\mu\nu}$ and $\uu_{G, \mu\nu}^{(0)}$ as in the $K$-term in Eq.~(\ref{SKlambda}).
-Second, on each placket $r, \mu < \nu$ we go from summation over integers $\tilde{\uu}_{\mu\nu}(r)$ to integration over real values as follows:
+where we used $ad - bc = 1$ and manipulated is such as to separate out the same combination of $\tilde{\uu}_{\mu\nu}$ and $\uu_{G, \mu\nu}^{(0)}$ as in the $K$-term in Eq.~(\ref{SKlambda}).
+Second, on each placket $R, \mu < \nu$ we go from summation over integers $\tilde{\uu}_{\mu\nu}(R)$ to integration over real values as follows:
 \begin{equation*}
-\sum_{\tilde{\uu}_{\mu\nu}(r) = -\infty}^\infty \!\!\!\!\! [\dots ]
-\!=\! \int_{-\infty}^\infty \!\!\!\! d\tilde{\uu}_{\mu\nu}(r) \!\!\!\!\! \sum_{\tilde{F}_{\mu\nu}(r) = -\infty}^\infty \!\!\!\!\! e^{-i 2\pi \tilde{F}_{\mu\nu}(r) \tilde{\uu}_{\mu\nu}(r)} [\dots ] ~.
+\sum_{\tilde{\uu}_{\mu\nu}(R) = -\infty}^\infty \!\!\!\!\! [\dots ]
+\!=\! \int_{-\infty}^\infty \!\!\!\! d\tilde{\uu}_{\mu\nu}(R) \!\!\!\!\! \sum_{\tilde{F}_{\mu\nu}(R) = -\infty}^\infty \!\!\!\!\! e^{-i 2\pi \tilde{F}_{\mu\nu}(R) \tilde{\uu}_{\mu\nu}(R)} [\dots ] ~,
 \end{equation*}
-Finally, we perform Gaussian integration over the $\tilde{\uu}_{\mu\nu}(r)$, which can be simplified, e.g., by changing to new integration variable $x_{\mu\nu}(r) \equiv 2\pi \tilde{\uu}_{\mu\nu}(r) - \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(r) + \frac{1}{d} \hext_{\mu\nu}(r) - \tilde{\omega}_{\mu\nu}(r)$.
+which can be viewed as an intermediate step in a Poisson resummation from $\tilde{B}_{\mu\nu}(R)$ to $\tilde{F}_{\mu\nu}(R)$. 
+Finally, we perform Gaussian integration over the $\tilde{\uu}_{\mu\nu}(R)$, which can be simplified, e.g., by changing to new integration variable $x_{\mu\nu}(R) \equiv 2\pi \tilde{\uu}_{\mu\nu}(R) - \frac{2\pi b}{d} \uu_{G, \mu\nu}^{(0)}(R) + \frac{1}{d} \hext_{\mu\nu}(R) - \tilde{\omega}_{\mu\nu}(R)$.
 The resulting action is:
 \begin{widetext}
 \begin{eqnarray}
-S &=& \frac{1}{2 K d^2} \sum_{r, \mu < \nu} \left[\tilde{F}_{\mu\nu}(r) + c \frac{(\epsilon_{\mu\nu\sigma\rho} \nabla_\sigma \Aext_\rho)(r)}{2\pi} \right]^2
-+ i \sum_{r, \mu < \nu} \tilde{F}_{\mu\nu}(r) \tilde{\omega}_{\mu\nu}
-+ \frac{\lambda}{2} \sum_{R\rho} \left[\cG_\rho(R) + c \frac{\EuFrak{g}^{\rm ext}_\rho(R)}{2\pi} \right]^2 
+S &=& \frac{1}{2 K d^2} \sum_{R, \mu < \nu} \left[\tilde{F}_{\mu\nu}(R) + c \frac{(\epsilon_{\mu\nu\sigma\rho} \nabla_\sigma \Aext_\rho)(R)}{2\pi} \right]^2
++ i \sum_{R, \mu < \nu} \tilde{F}_{\mu\nu}(R) \tilde{\omega}_{\mu\nu}(R)
++ \frac{\lambda}{2} \sum_{r\rho} \left[\cG_\rho(r) + c \frac{\EuFrak{g}^{\rm ext}_\rho(r)}{2\pi} \right]^2 
 \label{S_FG_wtildea} \\
-&+& i \sum_{r, \mu < \nu} \frac{2\pi b}{d} \tilde{F}_{\mu\nu}(r) \uu_{G, \mu\nu}^{(0)}(r)
-- i \sum_{r, \mu < \nu} \frac{1}{d} \tilde{F}_{\mu\nu}(r) \hext_{\mu\nu}(r)
-- i \sum_{R\rho} \frac{1}{d} \cG_\rho(R) \Aext_\rho(R)
-- i \sum_{R\rho} \frac{c}{2\pi d} \Aext_\rho(R) \EuFrak{g}^{\rm ext}_\rho(R) ~.
+&+& i \sum_{R, \mu < \nu} \frac{2\pi b}{d} \tilde{F}_{\mu\nu}(R) \uu_{G, \mu\nu}^{(0)}(R)
+- i \sum_{R, \mu < \nu} \frac{1}{d} \tilde{F}_{\mu\nu}(R) \hext_{\mu\nu}(R)
+- i \sum_{r\rho} \frac{1}{d} \cG_\rho(r) \Aext_\rho(r)
+- i \sum_{r\rho} \frac{c}{2\pi d} \Aext_\rho(r) \EuFrak{g}^{\rm ext}_\rho(r) ~.\nonumber
 \end{eqnarray}
 \end{widetext}
-We see that the formally introduced $\tilde{F}_{\mu\nu}(r)$ can be interpreted as integer-valued electromagnetic field tensor variables conjugate to the compact $\tilde{a}_\mu(r)$ variables.  Integrating out $\tilde{a}_\mu(r)$ gives ``Maxwell equations in free space'', $\sum_\nu \nabla_\nu \tilde{F}_{\mu\nu}(r) = 0$, while integrating out $\tilde{\gamma}_{\mu\nu}$ gives the condition of zero total field for each component, $\sum_r \delta_{r_\mu = 0} \delta_{r_\nu = 0} \tilde{F}_{\mu\nu}(r) = 0$.  For small $K$, the quantum lines whose worldsheets are represented by $\tilde{F}_{\mu\nu}(r)$ are gapped, while for small $\lambda$ the quantum particles whose worldlines are represented by $\cG_\rho(R)$ are gapped, so we have managed to express the partition sum completely in terms of gapped excitations in this phase.  From the coupling of $\tilde{F}_{\mu\nu}$ to $\hext_{\mu\nu}$ we explicitly see that the new lines carry fraction $1/d$ of the unit electric field strength, while from the coupling of $\cG_\rho$ to $\Aext_\rho$ we see that the new particles carry charge $1/d$ of the original bosons.  The coupling between $\tilde{F}_{\mu\nu}$ and $\uu_{G, \mu\nu}^{(0)}$ encodes $2\pi b/d$ statistical interaction between the new elementary line and particle excitations.  Finally, the last term $i \frac{c}{4\pi d} \sum \epsilon_{\rho\sigma\mu\nu} \Aext_\rho \nabla_\sigma \hext_{\mu\nu}$ is a property of the ``vacuum'' in these variables and represents a kind of cross-transverse response in this phase, which we see is quantized to the rational number $c/d$ in appropriate units.
+We see that the formally introduced $\tilde{F}_{\mu\nu}(R)$ can be interpreted as integer-valued electromagnetic field tensor variables conjugate to the compact $\tilde{a}_\mu(R)$ variables.  Integrating out $\tilde{a}_\mu(R)$ gives ``Maxwell equations in the absence of charges'', $\sum_\nu \nabla_\nu \tilde{F}_{\mu\nu}(R) = 0$, while integrating out $\tilde{\gamma}_{\mu\nu}$ gives the condition $\sum_r \delta_{R_\mu = 0} \delta_{R_\nu = 0} \tilde{F}_{\mu\nu}(R) = 0$, which is equivalent to zero total field for each component.  For small $K$, the quantum lines whose worldsheets are represented by $\tilde{F}_{\mu\nu}(R)$ are gapped, and for large $\lambda$ the quantum particles whose worldlines are represented by $\cG_\rho(r)$ are gapped, so we have managed to express the partition sum completely in terms of gapped excitations in this phase.  From the coupling of $\tilde{F}_{\mu\nu}$ to $\hext_{\mu\nu}$ we explicitly see that the new lines carry fraction $1/d$ of the unit electric field strength, while from the coupling of $\cG_\rho$ to $\Aext_\rho$ we see that the new particles carry charge $1/d$ of the original bosons.  The coupling between $\tilde{F}_{\mu\nu}$ and $\uu_{G, \mu\nu}^{(0)}$ encodes $2\pi b/d$ statistical interaction between the new elementary line and particle excitations.  Finally, the last term $i \frac{c}{4\pi d} \sum \epsilon_{\rho\sigma\mu\nu} \Aext_\rho \nabla_\sigma \hext_{\mu\nu}$ is a property of the ``vacuum'' in these variables and represents a kind of cross-transverse response in this phase, which we see is quantized to the rational number $c/d$ in appropriate units.
 
+When $d=1$ we have a quantized response, but the quantum numbers if the gapped excitations are not fractionalized, and therefore we have an SPT-like phase characterized by the integer $c$. When $d>1$ the quantum numbers of gapped excitations are fractionalized and we have intrinsic topological order and an SET-like phase.
 
-We can now make the connection to the in the \cp$\times$boson model in the main text, which we will refer to as $U(1)_{\rm spin} \times U(1)_{\rm boson}$ model.  We introducde additional ``spinon'' matter fields coupled to the compact gauge field, schematically
+The cross-transverse response is due to unusual surface states when the above phase borders a trivial phase ($d=1$, $c=0$). Analysis of the surface theory in Section \ref{subsec::cp1surface} can be carried over to this case in the absence of spinon matter, and we see that the surface has an emergent non-compact electrodynamics whose flux couples to $\Aext$ as in Eq.~(\ref{S_FG_wtildea}). 
+
+We can now make the connection to the in the $CP^1\times$boson model in the main text, which we will refer to as $U(1)_{\rm spin} \times U(1)_{\rm boson}$ model.  We introduce additional ``spinon'' matter fields coupled to the compact gauge field, schematically
 \begin{eqnarray}
-\delta S &=& S_{\rm spinons}[J_\up, J_\dn] + i \sum_{r\mu} [J_{\up, \mu}(r) + J_{\dn, \mu}(r)) a_\mu(r) \\
-&=& S_{\rm spinons}[J_\up, J_\dn] + i d \sum_{r\mu} [J_{\up, \mu}(r) + J_{\dn, \mu}(r)) \tilde{a}_\mu(r) ~,
+\delta S &=& S_{\rm spinons}[J_\up, J_\dn] + i \sum_{R\mu} [J_{\up, \mu}(R) + J_{\dn, \mu}(R)] a_\mu(R),\nonumber
 \end{eqnarray}
-where $J_{\up, \mu}(r)$ and $J_{\dn, \mu}(r)$ are integer-valued spinon currents, and in the last line we dropped all contributions of the form $i 2\pi \times$integer.  All manipulations leading to Eq.~(\ref{S_FG_wtildea}) do not touch the gauge field $\tilde{a}_\mu(r)$ and remain valid also in the presence of the spinon matter.  Now, since the original electric field lines have sources and sinks, the probing field $\hext_{\mu\nu}$ ceases to be meaningful and will be dropped; in particular, the characterization using rational $c/d$ for the cross-transverse response collapses.  On the other hand, the coupling of the new $\cG$ particles to $\Aext$ remains unaffected and we see that they carry $1/d$ fractional charge with respect to $U(1)_{\rm boson}$.  Furthermore, upon integrating out the $\tilde{a}_\mu(r)$ fields, we now have
+where $J_\up$ and $J_\dn$ are integer-valued spinon currents conjugate the the $\phi_\up$ and $\phi_\dn$ variables in Eq.~(\ref{sspin}). Using Eq.~(\ref{atilde}) and dropping all contributions of the form $i 2\pi \times$integer, we can write
+\begin{eqnarray}
+\delta S &=& S_{\rm spinons}[J_\up, J_\dn] + i d \sum_{R\mu} [J_{\up, \mu}(R) + J_{\dn, \mu}(R)] \tilde{a}_\mu(R) ~,\nonumber
+\end{eqnarray}
+All manipulations leading to Eq.~(\ref{S_FG_wtildea}) do not touch the gauge field $\tilde{a}_\mu(R)$ and remain valid also in the presence of the spinon matter.  Now, since the original electric field lines have sources and sinks, the probing field $\hext_{\mu\nu}$ ceases to be meaningful and will be dropped; in particular, the characterization using rational $c/d$ for the cross-transverse response collapses.  On the other hand, the coupling of the new $\cG$ particles to $\Aext$ remains unaffected and we see that they carry $1/d$ fractional charge with respect to $U(1)_{\rm boson}$.  Furthermore, upon integrating out the $\tilde{a}_\mu(R)$ fields, we now have
 \begin{equation}
-\sum_\nu \nabla_\nu \tilde{F}_{\mu\nu}(r) = d [J_{\up, \mu}(r) + J_{\dn, \mu}(r)] ~,
+\sum_\nu \nabla_\nu \tilde{F}_{\mu\nu}(R) = d [J_{\up, \mu}(R) + J_{\dn, \mu}(R)] ~,
 \end{equation}
-i.e., the spinons act as sources and sinks of the new field lines encoded by the integer-valued $\tilde{F}_{\mu\nu}(r)$, but these sources and sinks are in multiples of $d$.  We assume that the spinons are gapped, and they will clearly be confined in the regime of small $K$; however, they destroy the structure of integer-labeled closed lines.  Nevertheless, this destruction happens only for multiples of $d$, while it is still meaningful to talk about closed line excitations of strengths modulo $d$, i.e., we have line excitations labeled by $Z_d$.  The final result is that there is no fractionalization of the $U(1)_{\rm spin}$ system, but we still have $Z_d$ quantum line excitations and fractionalized particle excitations carrying charge $1/d$ with respect to $U(1)_{\rm boson}$, with mutual statistics between these lines and particles. 
+i.e., the spinons act as sources and sinks of the new field lines encoded by the integer-valued $\tilde{F}_{\mu\nu}(R)$, but these sources and sinks are in multiples of $d$.  We assume that the spinons are gapped, and they will clearly be confined in the regime of small $K$; however, they destroy the structure of integer-labeled closed lines.  Nevertheless, this destruction happens only for multiples of $d$, while it is still meaningful to talk about closed line excitations of strengths modulo $d$, i.e., we have line excitations labeled by $Z_d$.  The final result is that there is no fractionalization of the $U(1)_{\rm spin}$ system, but we still have $Z_d$ quantum line excitations and fractionalized particle excitations carrying charge $1/d$ with respect to $U(1)_{\rm boson}$, with mutual statistics between these lines and particles. 
+
+Note that in either the $d=1$ or $d>1$ case the, when the system contains the $U(1)$ and $\ztwot$ symmetries and $c$ is odd, the resulting phase is distinct from a phase which is a direct product of a trivial spin state times a trivial (or $1/d$ fractionalized) boson state. This distinction can be observed by measuring a quantized Witten effect as discussed in the main text. 
+%If symmetries are broken or $c$ is even, the 
+
 
 
 
